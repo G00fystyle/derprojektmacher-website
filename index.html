@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DER PROJEKTMACHER | Projektmanagement, Koordination & Umsetzung</title>
+  <meta name="description" content="DER PROJEKTMACHER unterstützt bei Projektmanagement, Organisation, Koordination, Sanierung und Umsetzung – pragmatisch, strukturiert und mit Hausverstand.">
+  <meta name="theme-color" content="#102231">
+  <meta property="og:title" content="DER PROJEKTMACHER – Einfach ans Ziel.">
+  <meta property="og:description" content="Projektmanagement, Koordination und Umsetzung für Unternehmen, Haus & Sanierung.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://derprojektmacher.eu/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='14' y='14' width='72' height='72' fill='none' stroke='%23111827' stroke-width='8'/%3E%3Cpath d='M28 53 L44 69 L77 31' fill='none' stroke='%23f45a14' stroke-width='10'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy:#102231;
+      --navy-2:#172e40;
+      --ink:#111827;
+      --muted:#5d6875;
+      --line:#dfe5e9;
+      --paper:#ffffff;
+      --soft:#f5f7f8;
+      --orange:#f45a14;
+      --orange-dark:#d84a0b;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.98);position:sticky;top:0;z-index:10}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:92px}
+    .logo{width:285px;max-width:56vw;display:block}
+    .mail-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;color:#fff;background:var(--orange);padding:13px 18px;border-radius:5px;white-space:nowrap}
+    .mail-link:hover{background:var(--orange-dark)}
+    .hero{padding:88px 0 76px;background:linear-gradient(125deg,#fff 0%,#fff 56%,#f2f4f5 100%)}
+    .eyebrow{font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900;color:var(--orange);margin:0 0 14px}
+    h1{font-size:clamp(2.7rem,6vw,5.6rem);line-height:.98;letter-spacing:-.055em;margin:0;max-width:880px}
+    h1 span{display:block;color:var(--orange)}
+    .lead{font-size:clamp(1.12rem,2.2vw,1.38rem);max-width:760px;color:#384451;margin:30px 0 0}
+    .values{display:flex;flex-wrap:wrap;gap:10px 28px;margin:34px 0 0;padding:0;list-style:none;font-weight:800}
+    .values li::before{content:"✓";color:var(--orange);margin-right:8px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:850;padding:14px 20px;border-radius:5px;border:2px solid var(--orange)}
+    .btn.primary{background:var(--orange);color:white}
+    .btn.primary:hover{background:var(--orange-dark);border-color:var(--orange-dark)}
+    .btn.secondary{color:var(--orange);background:#fff}
+    section{padding:72px 0}
+    .section-kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;margin-bottom:7px}
+    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 14px}
+    .section-intro{max-width:760px;color:var(--muted);margin:0 0 34px;font-size:1.05rem}
+    .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{border:1px solid var(--line);background:#fff;padding:30px 28px 26px;border-radius:6px;min-width:0}
+    .card-number{font-size:.78rem;font-weight:900;color:var(--orange);letter-spacing:.12em;margin-bottom:18px}
+    .card h3{font-size:1.35rem;margin:0 0 16px}
+    .card ul{padding:0;margin:0;list-style:none;color:#3e4a56}
+    .card li{padding:7px 0 7px 22px;position:relative;border-bottom:1px solid #eef1f3}
+    .card li:last-child{border-bottom:0}
+    .card li::before{content:"✓";position:absolute;left:0;color:var(--orange);font-weight:900}
+    .promise{background:var(--navy);color:#fff}
+    .promise-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start}
+    .promise h2{color:#fff}
+    .promise p{color:#d9e1e6;max-width:690px}
+    .points{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .point{border-top:2px solid var(--orange);padding-top:14px}
+    .point strong{display:block;font-size:1.05rem;margin-bottom:4px}
+    .point span{color:#b9c5cd;font-size:.94rem}
+    .contact{padding:78px 0;background:#f6f7f8}
+    .contact-box{display:flex;align-items:center;justify-content:space-between;gap:30px;border-left:6px solid var(--orange);padding:24px 0 24px 28px}
+    .contact-box h2{margin-bottom:8px}
+    .contact-box p{margin:0;color:var(--muted)}
+    .email-big{font-size:clamp(1rem,2.4vw,1.42rem);font-weight:900;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px}
+    footer{background:#0b1720;color:#d5dde3;padding:28px 0}
+    .footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+    .footer-brand{font-weight:900;color:#fff}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
+    .footer-links a{color:#d5dde3;text-decoration:none}
+    .footer-links a:hover{color:#fff}
+    @media (max-width:850px){
+      .services{grid-template-columns:1fr}
+      .promise-grid{grid-template-columns:1fr;gap:36px}
+      .hero{padding:64px 0 58px}
+      .contact-box{display:block}
+      .email-big{display:inline-block;margin-top:20px}
+    }
+    @media (max-width:620px){
+      .wrap{width:min(calc(100% - 28px),var(--max))}
+      header{position:static}
+      .topbar{min-height:80px;align-items:flex-start;padding:14px 0;flex-direction:column;gap:12px}
+      .logo{width:245px;max-width:100%}
+      .mail-link{width:100%}
+      section{padding:56px 0}
+      .hero{padding:52px 0}
+      .points{grid-template-columns:1fr}
+      .card{padding:25px 22px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a href="#top" aria-label="Zur Startseite"><img class="logo" src="logo.svg" alt="DER PROJEKTMACHER – Einfach ans Ziel."></a>
+      <a class="mail-link" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Projektmanagement · Organisation · Umsetzung</p>
+        <h1>Einfach ans Ziel.<span>Ich kümmere mich darum.</span></h1>
+        <p class="lead">Projektmanagement, Koordination und Umsetzung für Unternehmen, Haus & Sanierung. Klar strukturiert, pragmatisch und mit Hausverstand.</p>
+        <ul class="values" aria-label="Arbeitsweise">
+          <li>Mit Hausverstand</li>
+          <li>Einfach</li>
+          <li>Ehrlich</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:office@derprojektmacher.eu?subject=Projektanfrage%20DER%20PROJEKTMACHER" target="_blank" rel="noopener noreferrer">Projekt anfragen</a>
+          <a class="btn secondary" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen">
+      <div class="wrap">
+        <div class="section-kicker">Leistungen</div>
+        <h2>Struktur, Koordination und Umsetzung.</h2>
+        <p class="section-intro">Wenn Projekte ins Stocken geraten, Schnittstellen unklar sind oder schlicht die Zeit für konsequente Umsetzung fehlt, übernehme ich Struktur und Koordination.</p>
+        <div class="services">
+          <article class="card">
+            <div class="card-number">01 · UNTERNEHMEN & INDUSTRIE</div>
+            <h3>Projekte sicher umsetzen</h3>
+            <ul>
+              <li>Projektleitung und Projektkoordination</li>
+              <li>Prozess- und Organisationsoptimierung</li>
+              <li>Produkt- und Ablaufoptimierung</li>
+              <li>Technische Beschaffung und Umsetzung</li>
+              <li>Termine, Kosten und Schnittstellen im Blick</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-number">02 · HAUS & PROJEKTE</div>
+            <h3>Organisation, die entlastet</h3>
+            <ul>
+              <li>Organisation und Koordination</li>
+              <li>Abstimmung mit Handwerkern und Dienstleistern</li>
+              <li>Termin- und Ablaufplanung</li>
+              <li>Begleitung von Umbau- und Sanierungsprojekten</li>
+              <li>Praktische Umsetzungshilfe nach Vereinbarung</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-number">03 · IMMOBILIEN & SANIERUNG</div>
+            <h3>Sanierung mit Überblick</h3>
+            <ul>
+              <li>Sanierungskoordination und Projektbegleitung</li>
+              <li>Maßnahmen- und Ablaufplanung</li>
+              <li>Kosten- und Terminübersicht</li>
+              <li>Schnittstellenkoordination</li>
+              <li>Optimierung bestehender Immobilien</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise">
+      <div class="wrap promise-grid">
+        <div>
+          <div class="section-kicker">DER PROJEKTMACHER</div>
+          <h2>Entlastung und Umsetzungssicherheit.</h2>
+          <p>Ein Projekt braucht nicht mehr Theorie, sondern Klarheit: Was ist zu tun? Wer macht was? Bis wann? Ich schaffe Struktur, halte Themen zusammen und bringe die Umsetzung voran.</p>
+        </div>
+        <div class="points">
+          <div class="point"><strong>Klar</strong><span>Transparente Aufgaben und nächste Schritte.</span></div>
+          <div class="point"><strong>Pragmatisch</strong><span>Lösungen, die im Alltag funktionieren.</span></div>
+          <div class="point"><strong>Verlässlich</strong><span>Termine, Abstimmungen und offene Punkte im Blick.</span></div>
+          <div class="point"><strong>Regional</strong><span>Direkt, unkompliziert und auf Augenhöhe.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="wrap contact-box">
+        <div>
+          <div class="section-kicker">Kontakt</div>
+          <h2>Sie haben ein Projekt?</h2>
+          <p>Schreiben Sie kurz, worum es geht. Ich melde mich persönlich zurück.</p>
+        </div>
+        <a class="email-big" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div class="footer-brand">DER PROJEKTMACHER</div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
