@@ -77,7 +77,7 @@
     .quality:first-child{padding-left:0}
     .quality:last-child{border-right:0;padding-right:0}
     .quality-icon{width:44px;height:44px;color:var(--orange)}
-    .quality-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .quality-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
     .quality strong{display:block;text-transform:uppercase;font-size:.82rem;letter-spacing:.04em;color:#fff;margin-bottom:3px}
     .quality span{display:block;color:#d0d9df;font-size:.9rem;line-height:1.42}
 
@@ -87,8 +87,8 @@
     .section-intro{max-width:790px;color:var(--muted);margin:0 0 34px;font-size:1.05rem}
     .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
     .card{border:1px solid var(--line);background:#fff;padding:32px 30px 28px;border-radius:7px;min-width:0}
-    .card-label{font-size:.78rem;font-weight:900;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
-    .card h3{font-size:1.45rem;margin:0 0 16px;line-height:1.15}
+    .card-label{font-size:.78rem;font-weight:900;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;min-height:2.55em;display:flex;align-items:flex-start}
+    .card h3{font-size:1.45rem;margin:0 0 16px;line-height:1.15;min-height:2.35em;display:flex;align-items:flex-start}
     .card ul{padding:0;margin:0;list-style:none;color:#3e4a56}
     .card li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #eef1f3;overflow-wrap:break-word}
     .card li:last-child{border-bottom:0}
@@ -171,7 +171,8 @@
       h2{font-size:clamp(1.8rem,8.4vw,2.15rem);line-height:1.08;letter-spacing:-.025em}
       .section-intro{font-size:1rem;margin-bottom:26px}
       .card{padding:24px 20px}
-      .card h3{font-size:1.3rem}
+      .card-label{min-height:0}
+      .card h3{font-size:1.3rem;min-height:0}
       .card-number{line-height:1.45}
       .service-note{padding:16px 16px}
       .competence-teaser{padding:42px 0}
@@ -264,19 +265,27 @@
     <section class="qualities" aria-label="Arbeitsweise und Stärken">
       <div class="wrap qualities-grid">
         <div class="quality">
-          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="8"/><path d="M10 42c0-9 6-16 14-16s14 7 14 16"/></svg></div>
+          <div class="quality-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="13" r="7"/><path d="M11 42v-5c0-8 5-14 13-14s13 6 13 14v5"/></svg>
+          </div>
           <div><strong>Persönlich</strong><span>Direkter Ansprechpartner und klare Kommunikation auf Augenhöhe.</span></div>
         </div>
         <div class="quality">
-          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 12-14"/></svg></div>
+          <div class="quality-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 12-14"/></svg>
+          </div>
           <div><strong>Praktisch</strong><span>Lösungen, die im Alltag funktionieren und umsetzbar bleiben.</span></div>
         </div>
         <div class="quality">
-          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m18 27-5-5-7 7 9 9 7-7"/><path d="m30 27 5-5 7 7-9 9-7-7"/><path d="m18 27 5-5c2-2 4-2 6 0l4 4"/><path d="m15 38 4 4 4-4 4 4 4-4"/></svg></div>
+          <div class="quality-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M7 20 16 11l7 7-9 9-7-7Z"/><path d="m41 20-9-9-7 7 9 9 7-7Z"/><path d="m17 17 5-4c2-2 5-2 7 0l5 4"/><path d="m14 27 7 7c2 2 4 2 6 0l7-7"/><path d="m18 31-3 3 5 5 3-3M25 35l3 3 5-5-3-3"/></svg>
+          </div>
           <div><strong>Verlässlich</strong><span>Absprachen, Termine und offene Punkte transparent im Blick.</span></div>
         </div>
         <div class="quality">
-          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M18 7h8v8a5 5 0 1 0 8 4h7v9h-8a5 5 0 1 0-4 8v7h-9v-8a5 5 0 1 0-8-4H5v-9h8a5 5 0 0 0 5-5V7Z"/></svg></div>
+          <div class="quality-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M18 6h9v8a5 5 0 1 1 6 6h9v9h-8a5 5 0 1 1-6 6v7h-9v-8a5 5 0 1 1-6-6H6v-9h8a5 5 0 0 0 4-5V6Z"/></svg>
+          </div>
           <div><strong>Vielseitig</strong><span>Erfahrung aus Industrie, Sanierung und praktischer Projektarbeit.</span></div>
         </div>
       </div>
@@ -289,7 +298,7 @@
         <p class="section-intro">Ob Industrieprojekt, Sanierung oder privates Vorhaben: Meine Leistungen greifen je nach Projekt ineinander – mit dem Ziel, Überblick zu schaffen, Beteiligte abzustimmen und Leistung, Termine und Kosten im Blick zu behalten.</p>
         <div class="services">
           <article class="card">
-            <div class="card-label">Projektsteuerung &amp; Koordination</div>
+            <div class="card-label">Projekt &amp; Koordination</div>
             <h3>Projekte klar steuern</h3>
             <ul>
               <li>Projektleitung und Projektkoordination</li>
@@ -300,7 +309,7 @@
           </article>
 
           <article class="card">
-            <div class="card-label">Organisation &amp; Optimierung</div>
+            <div class="card-label">Prozesse &amp; Optimierung</div>
             <h3>Abläufe sinnvoll verbessern</h3>
             <ul>
               <li>Prozesse und Abläufe strukturieren</li>
@@ -311,8 +320,8 @@
           </article>
 
           <article class="card">
-            <div class="card-label">Sanierung &amp; praktische Begleitung</div>
-            <h3>Vorhaben koordiniert begleiten</h3>
+            <div class="card-label">Sanierung &amp; Begleitung</div>
+            <h3>Sanierungen strukturiert begleiten</h3>
             <ul>
               <li>Sanierungs- und Umbauprojekte koordinieren</li>
               <li>Handwerker und Dienstleister abstimmen</li>
@@ -321,7 +330,7 @@
             </ul>
           </article>
         </div>
-        <div class="service-note"><strong>Die Schwerpunkte lassen sich je nach Projekt kombinieren.</strong> Entscheidend ist nicht die Schublade, sondern welche Unterstützung für das konkrete Vorhaben sinnvoll ist.</div>
+        <div class="service-note"><strong>Die Leistungen lassen sich je nach Projekt flexibel kombinieren.</strong> Umfang und Schwerpunkt richten sich nach den konkreten Anforderungen des Vorhabens.</div>
       </div>
     </section>
 
