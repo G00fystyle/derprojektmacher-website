@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DER PROJEKTMACHER | Projektmanagement, Koordination & Umsetzung</title>
-  <meta name="description" content="DER PROJEKTMACHER schafft Klarheit in komplexen Projekten, koordiniert Beteiligte und schafft belastbare Entscheidungsgrundlagen – mit Leistung, Terminen und Kosten im Blick.">
+  <meta name="description" content="DER PROJEKTMACHER bringt Struktur in komplexe Projekte, koordiniert Beteiligte und behält Leistung, Termine und Kosten im Blick – für klare Entscheidungen und verlässliche Projektsteuerung.">
   <meta name="theme-color" content="#102231">
   <meta property="og:title" content="DER PROJEKTMACHER – Einfach ans Ziel.">
   <meta property="og:description" content="Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen – pragmatisch, verlässlich und mit Hausverstand.">
@@ -31,16 +31,16 @@
     a{color:inherit}
     .wrap{width:min(calc(100% - 40px),var(--max));margin:auto;min-width:0}
     header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.98);position:sticky;top:0;z-index:10}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:88px;min-width:0}
-    .logo{width:235px;max-width:52vw;display:block}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:32px;min-height:112px;min-width:0}
+    .logo{width:325px;max-width:64vw;display:block}
     .mail-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;color:#fff;background:var(--orange);padding:12px 17px;border-radius:5px;white-space:nowrap;max-width:100%}
     .mail-link:hover{background:var(--orange-dark)}
 
-    .hero{padding:76px 0 66px;background:linear-gradient(125deg,#fff 0%,#fff 60%,#f2f4f5 100%)}
+    .hero{padding:64px 0 58px;background:linear-gradient(125deg,#fff 0%,#fff 60%,#f2f4f5 100%)}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:64px;align-items:center}
     .hero-main,.hero-benefit{min-width:0}
     .eyebrow{font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900;color:var(--orange);margin:0 0 14px}
-    h1{font-size:clamp(2.7rem,5.2vw,4.7rem);line-height:.98;letter-spacing:-.05em;margin:0;max-width:720px;overflow-wrap:break-word;hyphens:auto}
+    h1{font-size:clamp(2.55rem,4.3vw,4rem);line-height:1;letter-spacing:-.045em;margin:0;max-width:720px;overflow-wrap:break-word;hyphens:auto}
     h1 span{display:block;color:var(--orange)}
     .lead{font-size:clamp(1.08rem,1.8vw,1.28rem);max-width:700px;color:#384451;margin:26px 0 0}
     .values{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 0;padding:0;list-style:none;font-weight:800}
@@ -62,6 +62,24 @@
     .proof-item strong{display:block;font-size:1.05rem;color:var(--navy)}
     .proof-item span{display:block;color:var(--muted);font-size:.9rem;margin-top:2px}
     .scope-note{margin:12px 0 0;color:var(--muted);font-size:.9rem;text-align:right}
+
+    .field-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:34px;border:1px solid var(--line);background:#fff}
+    .field-item{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;align-items:start;padding:24px 26px;min-width:0;border-right:1px solid var(--line)}
+    .field-item:last-child{border-right:0}
+    .field-icon{width:54px;height:54px;color:var(--orange)}
+    .field-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+    .field-item strong{display:block;text-transform:uppercase;font-size:.82rem;letter-spacing:.045em;color:var(--ink);margin:1px 0 5px}
+    .field-item span{display:block;color:var(--muted);font-size:.94rem;line-height:1.45}
+
+    .qualities{background:linear-gradient(120deg,#101a20 0%,#1a252c 100%);color:#fff;padding:28px 0}
+    .qualities-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+    .quality{display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:center;padding:2px 24px;min-width:0;border-right:1px solid rgba(255,255,255,.13)}
+    .quality:first-child{padding-left:0}
+    .quality:last-child{border-right:0;padding-right:0}
+    .quality-icon{width:44px;height:44px;color:var(--orange)}
+    .quality-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .quality strong{display:block;text-transform:uppercase;font-size:.82rem;letter-spacing:.04em;color:#fff;margin-bottom:3px}
+    .quality span{display:block;color:#d0d9df;font-size:.9rem;line-height:1.42}
 
     section{padding:68px 0}
     .section-kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;margin-bottom:7px}
@@ -107,7 +125,13 @@
       .promise-grid{grid-template-columns:1fr;gap:38px}
       .services{grid-template-columns:1fr}
       .proof{grid-template-columns:1fr 1fr}
-      .hero{padding:62px 0 56px}
+      .hero{padding:54px 0 52px}
+      .field-grid{grid-template-columns:1fr}
+      .field-item{border-right:0;border-bottom:1px solid var(--line)}
+      .field-item:last-child{border-bottom:0}
+      .qualities-grid{grid-template-columns:1fr 1fr;row-gap:22px}
+      .quality{border-right:0;padding:0 18px}
+      .quality:nth-child(odd){padding-left:0}
       .contact-box{display:block}
       .email-big{display:inline-block;margin-top:20px;white-space:normal;overflow-wrap:anywhere;word-break:break-word;min-width:0}
     }
@@ -116,18 +140,21 @@
       .wrap{width:min(calc(100% - 28px),var(--max))}
       header{position:static}
       .topbar{min-height:auto;align-items:flex-start;padding:14px 0;flex-direction:column;gap:12px}
-      .logo{width:205px;max-width:100%}
+      .logo{width:245px;max-width:100%}
       .mail-link{width:100%;font-size:.95rem;padding:11px 14px;white-space:normal;text-align:center;overflow-wrap:anywhere}
       .hero{padding:44px 0 46px}
       .hero-grid{gap:28px}
       .eyebrow{font-size:.73rem;line-height:1.45;margin-bottom:12px}
-      h1{font-size:clamp(2.35rem,10.5vw,3.05rem);line-height:1.02;letter-spacing:-.04em;max-width:100%}
+      h1{font-size:clamp(2.15rem,9.2vw,2.7rem);line-height:1.03;letter-spacing:-.035em;max-width:100%}
       .lead{font-size:1.05rem;line-height:1.55;margin-top:22px}
       .values{gap:8px 18px;margin-top:22px;font-size:.94rem}
       .hero-actions{margin-top:28px}
       .btn{width:100%;padding:12px 16px}
       .hero-benefit{padding:24px 20px 20px}
       .hero-benefit h2{font-size:1.55rem}
+      .field-grid{margin-top:26px}
+      .field-item{grid-template-columns:50px minmax(0,1fr);padding:18px 16px}
+      .field-icon{width:46px;height:46px}
       .proof{grid-template-columns:1fr;margin-top:24px}
       .scope-note{text-align:left;font-size:.88rem}
       .proof-item{padding:14px 16px}
@@ -138,6 +165,10 @@
       .card h3{font-size:1.3rem}
       .card-number{line-height:1.45}
       .service-note{padding:16px 16px}
+      .qualities{padding:24px 0}
+      .qualities-grid{grid-template-columns:1fr;row-gap:20px}
+      .quality,.quality:nth-child(odd){padding:0;border-right:0}
+      .quality-icon{width:42px;height:42px}
       .promise{padding:52px 0}
       .promise-grid{gap:30px}
       .promise p{font-size:1rem;line-height:1.6}
@@ -166,7 +197,7 @@
           <div class="hero-main">
             <p class="eyebrow">Projektmanagement · Organisation · Umsetzung</p>
             <h1>Einfach ans Ziel.<span>Ich kümmere mich darum.</span></h1>
-            <p class="lead">Ich bringe Klarheit in komplexe Projekte, koordiniere Beteiligte und schaffe belastbare Entscheidungsgrundlagen – mit Leistung, Terminen und Kosten im Blick.</p>
+            <p class="lead">Ich bringe Struktur in komplexe Projekte, koordiniere die Beteiligten und behalte Leistung, Termine und Kosten im Blick. So entsteht die Übersicht, die für gute Entscheidungen notwendig ist.</p>
             <ul class="values" aria-label="Arbeitsweise">
               <li>Mit Hausverstand</li>
               <li>Einfach</li>
@@ -189,6 +220,27 @@
           </aside>
         </div>
 
+        <div class="field-grid" aria-label="Einsatzfelder">
+          <div class="field-item">
+            <div class="field-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M10 54V29l14 7V20l14 8V14l10 5v35H10Z"/><path d="M17 45h4M27 45h4M37 45h4M17 51h4M27 51h4M37 51h4"/><path d="M48 54h6"/></svg>
+            </div>
+            <div><strong>Unternehmen &amp; Industrie</strong><span>Projektmanagement, Prozesse, Organisation und technische Umsetzung.</span></div>
+          </div>
+          <div class="field-item">
+            <div class="field-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M9 31 32 11l23 20"/><path d="M14 28v26h36V28"/><path d="M26 54V39h12v15"/></svg>
+            </div>
+            <div><strong>Bau &amp; Sanierung</strong><span>Koordination von Sanierungen, Umbauten und Projekten rund um Gebäude und Objekt.</span></div>
+          </div>
+          <div class="field-item">
+            <div class="field-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="26" cy="20" r="9"/><path d="M10 52c0-10 7-18 16-18s16 8 16 18"/><circle cx="46" cy="26" r="6"/><path d="M39 39c2-4 5-7 9-7 6 0 10 5 10 12"/></svg>
+            </div>
+            <div><strong>Privat &amp; Objekt</strong><span>Organisation, Koordination und praktische Unterstützung bei konkreten Vorhaben.</span></div>
+          </div>
+        </div>
+
         <div class="proof" aria-label="Erfahrung und Projektverantwortung">
           <div class="proof-item"><strong>30+ Jahre Praxis</strong><span>Technik, Organisation und Umsetzung</span></div>
           <div class="proof-item"><strong>20+ Jahre Projektverantwortung</strong><span>Industrie, Schnittstellen und Veränderung</span></div>
@@ -199,15 +251,36 @@
       </div>
     </section>
 
+    <section class="qualities" aria-label="Arbeitsweise und Stärken">
+      <div class="wrap qualities-grid">
+        <div class="quality">
+          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="8"/><path d="M10 42c0-9 6-16 14-16s14 7 14 16"/></svg></div>
+          <div><strong>Persönlich</strong><span>Direkter Ansprechpartner und klare Kommunikation auf Augenhöhe.</span></div>
+        </div>
+        <div class="quality">
+          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 12-14"/></svg></div>
+          <div><strong>Praktisch</strong><span>Lösungen, die im Alltag funktionieren und umsetzbar bleiben.</span></div>
+        </div>
+        <div class="quality">
+          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m18 27-5-5-7 7 9 9 7-7"/><path d="m30 27 5-5 7 7-9 9-7-7"/><path d="m18 27 5-5c2-2 4-2 6 0l4 4"/><path d="m15 38 4 4 4-4 4 4 4-4"/></svg></div>
+          <div><strong>Verlässlich</strong><span>Absprachen, Termine und offene Punkte transparent im Blick.</span></div>
+        </div>
+        <div class="quality">
+          <div class="quality-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M18 7h8v8a5 5 0 1 0 8 4h7v9h-8a5 5 0 1 0-4 8v7h-9v-8a5 5 0 1 0-8-4H5v-9h8a5 5 0 0 0 5-5V7Z"/></svg></div>
+          <div><strong>Vielseitig</strong><span>Erfahrung aus Industrie, Sanierung und praktischer Projektarbeit.</span></div>
+        </div>
+      </div>
+    </section>
+
     <section id="leistungen">
       <div class="wrap">
-        <div class="section-kicker">Leistungen · zwei Bereiche</div>
-        <h2>Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen.</h2>
-        <p class="section-intro">Sie müssen nicht jedem offenen Punkt selbst hinterherlaufen. Ich schaffe Klarheit, koordiniere Beteiligte und halte Termine, Aufgaben und Abhängigkeiten im Blick – damit Entscheidungen fundiert getroffen werden können.</p>
+        <div class="section-kicker">Leistungen</div>
+        <h2>Ein Ansatz. Unterschiedliche Projekte.</h2>
+        <p class="section-intro">Ob Industrieprojekt oder Sanierung: Entscheidend sind klare Aufgaben, abgestimmte Beteiligte und ein verlässlicher Überblick über Leistung, Termine und Kosten.</p>
         <div class="services">
           <article class="card">
             <div class="card-number">01 · UNTERNEHMEN & INDUSTRIE</div>
-            <h3>Projekte klar steuern und voranbringen</h3>
+            <h3>Komplexe Projekte klar steuern</h3>
             <ul>
               <li>Projektleitung und Projektkoordination</li>
               <li>Prozess- und Organisationsoptimierung</li>
@@ -219,7 +292,7 @@
 
           <article class="card">
             <div class="card-number">02 · SANIERUNG, HAUS & IMMOBILIE</div>
-            <h3>Sanierung koordiniert begleiten</h3>
+            <h3>Sanierungen strukturiert begleiten</h3>
             <ul>
               <li>Sanierungskoordination und Projektbegleitung</li>
               <li>Abstimmung mit Handwerkern und Dienstleistern</li>
@@ -237,14 +310,14 @@
       <div class="wrap promise-grid">
         <div>
           <div class="section-kicker">DER PROJEKTMACHER</div>
-          <h2>Aus Informationen wird Klarheit. Aus Klarheit werden Entscheidungen.</h2>
-          <p>Projektleitung bedeutet für mich nicht nur, Ordnung zu schaffen. Entscheidend ist, relevante Informationen so zusammenzuführen, dass Chancen, Risiken und Handlungsbedarf sichtbar werden. So entstehen belastbare Entscheidungsgrundlagen und Projekte können gezielt weitergeführt werden.</p>
+          <h2>Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen.</h2>
+          <p>Sie behalten den Überblick, ohne jedem offenen Punkt selbst hinterherlaufen zu müssen. Ich bündele Informationen, koordiniere Beteiligte und mache sichtbar, wo Entscheidungen oder weitere Maßnahmen erforderlich sind.</p>
         </div>
         <div class="points">
           <div class="point"><strong>Roter Faden</strong><span>Komplexe Themen werden geordnet, priorisiert und nachvollziehbar.</span></div>
           <div class="point"><strong>Leistung · Termine · Kosten</strong><span>Die drei zentralen Projektgrößen bleiben gemeinsam im Blick.</span></div>
-          <div class="point"><strong>Fundierte Entscheidungen</strong><span>Fakten, Auswirkungen und Risiken werden transparent, bevor entschieden wird.</span></div>
-          <div class="point"><strong>Konsequente Nachverfolgung</strong><span>Beschlüsse, offene Punkte und nächste Schritte gehen nicht verloren.</span></div>
+          <div class="point"><strong>Gute Entscheidungen</strong><span>Fakten, Auswirkungen und Risiken werden transparent und nachvollziehbar.</span></div>
+          <div class="point"><strong>Klare nächste Schritte</strong><span>Beschlüsse, offene Punkte und notwendige Maßnahmen bleiben sichtbar.</span></div>
         </div>
       </div>
     </section>
