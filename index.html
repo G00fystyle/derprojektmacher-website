@@ -88,11 +88,11 @@
     .point span{display:block;color:#b9c5cd;font-size:.94rem;overflow-wrap:break-word}
 
     .contact{padding:72px 0;background:#f6f7f8}
-    .contact-box{display:flex;align-items:center;justify-content:space-between;gap:30px;border-left:6px solid var(--orange);padding:24px 0 24px 28px;min-width:0}
+    .contact-box{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:48px;border-left:6px solid var(--orange);padding:24px 0 24px 28px;min-width:0}
     .contact-box>div{min-width:0}
     .contact-box h2{margin-bottom:8px}
     .contact-box p{margin:0;color:var(--muted)}
-    .email-big{font-size:clamp(1rem,2vw,1.36rem);font-weight:900;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;overflow-wrap:anywhere;word-break:break-word;min-width:0}
+    .email-big{font-size:clamp(1rem,1.35vw,1.25rem);font-weight:900;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;white-space:nowrap;overflow-wrap:normal;word-break:normal;min-width:max-content}
 
     footer{background:#0b1720;color:#d5dde3;padding:28px 0}
     .footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -109,7 +109,7 @@
       .proof{grid-template-columns:1fr 1fr}
       .hero{padding:62px 0 56px}
       .contact-box{display:block}
-      .email-big{display:inline-block;margin-top:20px}
+      .email-big{display:inline-block;margin-top:20px;white-space:normal;overflow-wrap:anywhere;word-break:break-word;min-width:0}
     }
 
     @media (max-width:620px){
