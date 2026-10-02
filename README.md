@@ -1,4 +1,4 @@
-# DER PROJEKTMACHER – Website V16.1 (Prelaunch)
+# DER PROJEKTMACHER – Website V16.2 (Prelaunch)
 
 ## Upload auf GitHub Pages
 Alle Dateien und Ordner dieses Pakets in das Root-Verzeichnis des GitHub-Repositories hochladen. Die Ordnerstruktur muss erhalten bleiben.
@@ -43,3 +43,11 @@ Mobile-first: weniger Text, größere Marke, klare Informationshierarchie. Detai
 
 ## Prelaunch-Hinweis
 Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis ganz oben: „DER PROJEKTMACHER befindet sich derzeit im Aufbau; der Geschäftsbetrieb wurde noch nicht aufgenommen.“ Der restliche Auftritt ist bereits wie die finale Website formuliert. Zum offiziellen Start wird dieser Hinweis entfernt und die Suchmaschinenfreigabe (`noindex`) angepasst.
+
+
+## Änderungen V16.2
+- Einsatzfelder und Leistungen auf der Startseite zu einem kompakten Schwerpunkt-Bereich zusammengeführt.
+- Drei Bereiche mit Industrie-, Haus- und Personen-Icon beibehalten.
+- Wiederholungen des Wortes „Projekt“ reduziert.
+- Erfahrungsblock auf vier kompakte Kompetenzsignale erweitert.
+- Desktop und Mobile bleiben in einer einzigen `index.html` responsive kombiniert.
