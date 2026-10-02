@@ -51,3 +51,10 @@ Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis
 - Wiederholungen des Wortes „Projekt“ reduziert.
 - Erfahrungsblock auf vier kompakte Kompetenzsignale erweitert.
 - Desktop und Mobile bleiben in einer einzigen `index.html` responsive kombiniert.
+
+
+## V16.3 – Digitale Leistungen
+- Mobile USP vollständig: vier Punkte inkl. „Klare nächste Schritte“.
+- Neuer Schwerpunkt „Digital & Marketing“ auf der Startseite.
+- Neue Unterseite `digital-marketing.html` für Details zu Recruiting, Kundengewinnung, Websites, digitalen Abläufen, Anbieter-/Handwerkerrecherche sowie Angebotsvergleich/Preisspiegel.
+- Die öffentliche Website nennt das DWP-System bewusst nicht als Qualifikation oder Partnerschaft. Diese Bezeichnung erst nach tatsächlich absolvierter Einschulung/aktiver Berechtigung und mit zulässiger Markenverwendung ergänzen.
