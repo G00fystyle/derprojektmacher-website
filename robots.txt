@@ -1,3 +1,4 @@
+# Prelaunch: Seiten dürfen gecrawlt werden, tragen aber aktuell meta noindex.
+# Vor dem offiziellen Start die noindex-Tags entfernen und SEO final prüfen.
 User-agent: *
 Allow: /
-Sitemap: https://derprojektmacher.eu/sitemap.xml

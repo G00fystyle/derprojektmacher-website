@@ -2,396 +2,95 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DER PROJEKTMACHER | Projektmanagement, Koordination & Umsetzung</title>
-  <meta name="description" content="DER PROJEKTMACHER bringt Struktur in komplexe Projekte, koordiniert Beteiligte und behält Leistung, Termine und Kosten im Blick – für klare Entscheidungen und verlässliche Projektsteuerung.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DER PROJEKTMACHER | Website im Aufbau</title>
+  <meta name="description" content="DER PROJEKTMACHER entsteht derzeit als zukünftiges Gewerbe für Projektmanagement, Koordination und Umsetzung. Der Geschäftsbetrieb wurde noch nicht aufgenommen.">
+  <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#102231">
-  <meta property="og:title" content="DER PROJEKTMACHER – Einfach ans Ziel.">
-  <meta property="og:description" content="Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen – pragmatisch, verlässlich und mit Hausverstand.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://derprojektmacher.eu/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='14' y='14' width='72' height='72' fill='none' stroke='%23111827' stroke-width='8'/%3E%3Cpath d='M28 53 L44 69 L77 31' fill='none' stroke='%23f45a14' stroke-width='10'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      --navy:#102231;
-      --navy-2:#172e40;
-      --ink:#111827;
-      --muted:#5d6875;
-      --line:#dfe5e9;
-      --paper:#ffffff;
-      --soft:#f5f7f8;
-      --orange:#f45a14;
-      --orange-dark:#d84a0b;
-      --max:1120px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;overflow-x:hidden}
-    body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden}
-    img{max-width:100%;height:auto}
-    a{color:inherit}
-    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto;min-width:0}
-    header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.98);position:sticky;top:0;z-index:10}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:32px;min-height:112px;min-width:0}
-    .logo{width:325px;max-width:64vw;display:block}
-    .mail-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;color:#fff;background:var(--orange);padding:12px 17px;border-radius:5px;white-space:nowrap;max-width:100%}
-    .mail-link:hover{background:var(--orange-dark)}
-
-    .hero{padding:64px 0 58px;background:linear-gradient(125deg,#fff 0%,#fff 60%,#f2f4f5 100%)}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:64px;align-items:center}
-    .hero-main,.hero-benefit{min-width:0}
-    .eyebrow{font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900;color:var(--orange);margin:0 0 14px}
-    h1{font-size:clamp(2.55rem,4.3vw,4rem);line-height:1;letter-spacing:-.045em;margin:0;max-width:720px;overflow-wrap:break-word;hyphens:auto}
-    h1 span{display:block;color:var(--orange)}
-    .lead{font-size:clamp(1.08rem,1.8vw,1.28rem);max-width:700px;color:#384451;margin:26px 0 0}
-    .values{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 0;padding:0;list-style:none;font-weight:800}
-    .values li::before{content:"✓";color:var(--orange);margin-right:8px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:850;padding:13px 19px;border-radius:5px;border:2px solid var(--orange)}
-    .btn.primary{background:var(--orange);color:white}
-    .btn.primary:hover{background:var(--orange-dark);border-color:var(--orange-dark)}
-    .btn.secondary{color:var(--orange);background:#fff}
-
-    .hero-benefit{background:var(--navy);color:#fff;padding:30px 30px 26px;border-radius:8px;box-shadow:0 16px 40px rgba(16,34,49,.08)}
-    .benefit-kicker{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900;color:var(--orange);margin-bottom:10px}
-    .hero-benefit h2{font-size:1.75rem;line-height:1.08;margin:0 0 20px;color:#fff;letter-spacing:-.025em}
-    .benefit-list{list-style:none;padding:0;margin:0}
-    .benefit-list li{padding:13px 0;border-top:1px solid rgba(255,255,255,.15);display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;color:#dce4e9}
-    .benefit-list li::before{content:"✓";color:var(--orange);font-weight:900}
-    .proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:34px}
-    .proof-item{background:#fff;padding:22px 20px}
-    .proof-item strong{display:block;font-size:1.05rem;color:var(--navy)}
-    .proof-item span{display:block;color:var(--muted);font-size:.9rem;margin-top:2px}
-    .scope-note{margin:12px 0 0;color:var(--muted);font-size:.9rem;text-align:right}
-
-    .field-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:34px;border:1px solid var(--line);background:#fff}
-    .field-item{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;align-items:start;padding:24px 26px;min-width:0;border-right:1px solid var(--line)}
-    .field-item:last-child{border-right:0}
-    .field-icon{width:54px;height:54px;color:var(--orange)}
-    .field-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
-    .field-item strong{display:block;text-transform:uppercase;font-size:.82rem;letter-spacing:.045em;color:var(--ink);margin:1px 0 5px}
-    .field-item span{display:block;color:var(--muted);font-size:.94rem;line-height:1.45}
-
-    .qualities{background:linear-gradient(120deg,#101a20 0%,#1a252c 100%);color:#fff;padding:28px 0}
-    .qualities-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-    .quality{display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:center;padding:2px 24px;min-width:0;border-right:1px solid rgba(255,255,255,.13)}
-    .quality:first-child{padding-left:0}
-    .quality:last-child{border-right:0;padding-right:0}
-    .quality-icon{width:48px;height:48px;color:var(--orange)}
-    .quality-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-    .quality-icon svg.handshake-icon{stroke-width:.875}
-    .quality strong{display:block;text-transform:uppercase;font-size:.82rem;letter-spacing:.04em;color:#fff;margin-bottom:3px}
-    .quality span{display:block;color:#d0d9df;font-size:1rem;line-height:1.42}
-
-    section{padding:68px 0}
-    .section-kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;margin-bottom:7px}
-    h2{font-size:clamp(2rem,3.7vw,2.9rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 14px;overflow-wrap:break-word;hyphens:auto}
-    .section-intro{max-width:790px;color:var(--muted);margin:0 0 34px;font-size:1.05rem}
-    .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-    .card{border:1px solid var(--line);background:#fff;padding:32px 30px 28px;border-radius:7px;min-width:0}
-    .card-label{font-size:.78rem;font-weight:900;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;min-height:2.55em;display:flex;align-items:flex-start}
-    .card h3{font-size:1.45rem;margin:0 0 16px;line-height:1.15;min-height:2.35em;display:flex;align-items:flex-start}
-    .card ul{padding:0;margin:0;list-style:none;color:#3e4a56}
-    .card li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #eef1f3;overflow-wrap:break-word}
-    .card li:last-child{border-bottom:0}
-    .card li::before{content:"✓";position:absolute;left:0;color:var(--orange);font-weight:900}
-    .service-note{margin-top:18px;padding:18px 20px;background:var(--soft);border-left:4px solid var(--orange);color:#46515d}
-    .service-note strong{color:var(--navy)}
-
-    .competence-teaser{padding:54px 0;background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .competence-box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:42px;align-items:center}
-    .competence-box h2{font-size:clamp(1.8rem,3vw,2.45rem);margin-bottom:10px}
-    .competence-box p{margin:0;max-width:760px;color:var(--muted);font-size:1.02rem}
-    .text-link{display:inline-flex;align-items:center;gap:8px;color:var(--orange);font-weight:850;text-decoration:none;white-space:nowrap}
-    .text-link::after{content:"→";font-size:1.15em}
-    .text-link:hover{color:var(--orange-dark)}
-
-    .promise{background:var(--navy);color:#fff}
-    .promise-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:start}
-    .promise h2{color:#fff;max-width:620px}
-    .promise p{color:#d9e1e6;max-width:690px;margin-bottom:0}
-    .points{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-width:0}
-    .point{border-top:2px solid var(--orange);padding-top:14px;min-width:0}
-    .point strong{display:block;font-size:1.05rem;margin-bottom:4px}
-    .point span{display:block;color:#b9c5cd;font-size:.94rem;overflow-wrap:break-word}
-
-    .contact{padding:72px 0;background:#f6f7f8}
-    .contact-box{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:48px;border-left:6px solid var(--orange);padding:24px 0 24px 28px;min-width:0}
-    .contact-box>div{min-width:0}
-    .contact-box h2{margin-bottom:8px}
-    .contact-box p{margin:0;color:var(--muted)}
-    .email-big{font-size:clamp(1rem,1.35vw,1.25rem);font-weight:900;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;white-space:nowrap;overflow-wrap:normal;word-break:normal;min-width:max-content}
-
-    footer{background:#0b1720;color:#d5dde3;padding:28px 0}
-    .footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-    .footer-brand{font-weight:900;color:#fff}
-    .footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
-    .footer-links a{color:#d5dde3;text-decoration:none;overflow-wrap:anywhere}
-    .footer-links a:hover{color:#fff}
-
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr;gap:34px}
-      .hero-benefit{max-width:680px}
-      .promise-grid{grid-template-columns:1fr;gap:38px}
-      .services{grid-template-columns:1fr}
-      .proof{grid-template-columns:1fr 1fr}
-      .hero{padding:54px 0 52px}
-      .field-grid{grid-template-columns:1fr}
-      .field-item{border-right:0;border-bottom:1px solid var(--line)}
-      .field-item:last-child{border-bottom:0}
-      .qualities-grid{grid-template-columns:1fr 1fr;row-gap:22px}
-      .quality{border-right:0;padding:0 18px}
-      .quality:nth-child(odd){padding-left:0}
-      .competence-box{grid-template-columns:1fr;gap:18px}
-      .contact-box{display:block}
-      .email-big{display:inline-block;margin-top:20px;white-space:normal;overflow-wrap:anywhere;word-break:break-word;min-width:0}
-    }
-
-    @media (max-width:620px){
-      .wrap{width:min(calc(100% - 28px),var(--max))}
-      header{position:static}
-      .topbar{min-height:auto;align-items:flex-start;padding:14px 0;flex-direction:column;gap:12px}
-      .logo{width:245px;max-width:100%}
-      .mail-link{width:100%;font-size:.95rem;padding:11px 14px;white-space:normal;text-align:center;overflow-wrap:anywhere}
-      .hero{padding:44px 0 46px}
-      .hero-grid{gap:28px}
-      .eyebrow{font-size:.73rem;line-height:1.45;margin-bottom:12px}
-      h1{font-size:clamp(2.15rem,9.2vw,2.7rem);line-height:1.03;letter-spacing:-.035em;max-width:100%}
-      .lead{font-size:1.05rem;line-height:1.55;margin-top:22px}
-      .values{gap:8px 18px;margin-top:22px;font-size:.94rem}
-      .hero-actions{margin-top:28px}
-      .btn{width:100%;padding:12px 16px}
-      .hero-benefit{padding:24px 20px 20px}
-      .hero-benefit h2{font-size:1.55rem}
-      .field-grid{margin-top:26px}
-      .field-item{grid-template-columns:50px minmax(0,1fr);padding:18px 16px}
-      .field-icon{width:46px;height:46px}
-      .proof{grid-template-columns:1fr;margin-top:24px}
-      .scope-note{text-align:left;font-size:.88rem}
-      .proof-item{padding:17px 16px}
-      section{padding:50px 0}
-      h2{font-size:clamp(1.8rem,8.4vw,2.15rem);line-height:1.08;letter-spacing:-.025em}
-      .section-intro{font-size:1rem;margin-bottom:26px}
-      .card{padding:24px 20px}
-      .card-label{min-height:0}
-      .card h3{font-size:1.3rem;min-height:0}
-      .card-number{line-height:1.45}
-      .service-note{padding:16px 16px}
-      .competence-teaser{padding:42px 0}
-      .qualities{padding:24px 0}
-      .qualities-grid{grid-template-columns:1fr;row-gap:20px}
-      .quality,.quality:nth-child(odd){padding:0;border-right:0}
-      .quality-icon{width:46px;height:46px}
-      .promise{padding:52px 0}
-      .promise-grid{gap:30px}
-      .promise p{font-size:1rem;line-height:1.6}
-      .points{grid-template-columns:1fr;gap:0}
-      .point{padding:15px 0 17px}
-      .point span{font-size:.98rem;line-height:1.5}
-      .contact{padding:52px 0}
-      .contact-box{padding:18px 0 18px 18px}
-      .email-big{font-size:1rem;line-height:1.4}
-      .footer-row{align-items:flex-start;flex-direction:column}
-    }
-  </style>
+  <link rel="canonical" href="https://derprojektmacher.eu/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <header>
-    <div class="wrap topbar">
-      <a href="#top" aria-label="Zur Startseite"><img class="logo" src="logo.svg" alt="DER PROJEKTMACHER – Einfach ans Ziel."></a>
-      <a class="mail-link" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+<header class="site-header">
+  <div class="wrap header-inner"><a href="index.html" aria-label="DER PROJEKTMACHER Startseite"><img class="site-logo" src="logo.svg" alt="DER PROJEKTMACHER – Einfach ans Ziel."></a></div>
+</header>
+<div class="prelaunch" role="note">
+  <div class="wrap prelaunch-inner"><span class="prelaunch-dot" aria-hidden="true"></span><span><strong>Zukünftiges Gewerbe im Aufbau.</strong> Der Geschäftsbetrieb wurde noch nicht aufgenommen; aktuell erfolgt keine Auftragsannahme.</span></div>
+</div>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker desktop-extra">Projektmanagement · Koordination · Umsetzung</p>
+      <p class="kicker mobile-only">Projektmanagement · Koordination</p>
+      <h1>Einfach ans Ziel.<span>Ich kümmere mich darum.</span></h1>
+      <p class="lead">Ich schaffe Überblick, koordiniere Beteiligte und halte Projekte auf Kurs.</p>
+      <ul class="micro-values" aria-label="Arbeitsweise"><li>Mit Hausverstand</li><li>Einfach</li><li>Ehrlich</li></ul>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="hero-main">
-            <p class="eyebrow">Projektmanagement · Organisation · Umsetzung</p>
-            <h1>Einfach ans Ziel.<span>Ich kümmere mich darum.</span></h1>
-            <p class="lead">Ich bringe Struktur in komplexe Projekte, koordiniere die Beteiligten und behalte Leistung, Termine und Kosten im Blick. So entsteht die Übersicht, die für gute Entscheidungen notwendig ist.</p>
-            <ul class="values" aria-label="Arbeitsweise">
-              <li>Mit Hausverstand</li>
-              <li>Einfach</li>
-              <li>Ehrlich</li>
-            </ul>
-            <div class="hero-actions">
-              <a class="btn primary" href="mailto:office@derprojektmacher.eu?subject=Projektanfrage%20DER%20PROJEKTMACHER" target="_blank" rel="noopener noreferrer">Projekt anfragen</a>
-              <a class="btn secondary" href="#leistungen">Leistungen ansehen</a>
-            </div>
-          </div>
-
-          <aside class="hero-benefit" aria-label="Ihr Nutzen">
-            <div class="benefit-kicker">Ihr Nutzen</div>
-            <h2>Aus Überblick werden bessere Entscheidungen.</h2>
-            <ul class="benefit-list">
-              <li>Informationen, Prioritäten und Abhängigkeiten werden transparent.</li>
-              <li>Leistung, Termine und Kosten bleiben gemeinsam im Blick.</li>
-              <li>Entscheidungsbedarf, Ressourcenengpässe und nächste Schritte werden früh sichtbar.</li>
-            </ul>
-          </aside>
-        </div>
-
-        <div class="field-grid" aria-label="Einsatzfelder">
-          <div class="field-item">
-            <div class="field-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><path d="M10 54V29l14 7V20l14 8V14l10 5v35H10Z"/><path d="M17 45h4M27 45h4M37 45h4M17 51h4M27 51h4M37 51h4"/><path d="M48 54h6"/></svg>
-            </div>
-            <div><strong>Unternehmen &amp; Industrie</strong><span>Projektmanagement, Prozesse, Organisation und technische Umsetzung.</span></div>
-          </div>
-          <div class="field-item">
-            <div class="field-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><path d="M9 31 32 11l23 20"/><path d="M14 28v26h36V28"/><path d="M26 54V39h12v15"/></svg>
-            </div>
-            <div><strong>Bau &amp; Sanierung</strong><span>Koordination von Sanierungen, Umbauten und Projekten rund um Gebäude und Objekt.</span></div>
-          </div>
-          <div class="field-item">
-            <div class="field-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64"><circle cx="26" cy="20" r="9"/><path d="M10 52c0-10 7-18 16-18s16 8 16 18"/><circle cx="46" cy="26" r="6"/><path d="M39 39c2-4 5-7 9-7 6 0 10 5 10 12"/></svg>
-            </div>
-            <div><strong>Privat &amp; Objekt</strong><span>Organisation, Koordination und praktische Unterstützung bei konkreten Vorhaben.</span></div>
-          </div>
-        </div>
-
-        <div class="proof" aria-label="Erfahrung und Projektverantwortung">
-          <div class="proof-item"><strong>30+ Jahre Praxis</strong><span>Technik, Organisation und Umsetzung</span></div>
-          <div class="proof-item"><strong>20+ Jahre Projektverantwortung</strong><span>Industrie, Schnittstellen und Veränderung</span></div>
-          <div class="proof-item"><strong>Großvolumige Projekte</strong><span>Erfahrung in der Leitung anspruchsvoller Industrie- und Investitionsprojekte</span></div>
-          <div class="proof-item"><strong>Umsatzstarke Wertströme</strong><span>Verantwortung für Produktwertströme mit hoher wirtschaftlicher Bedeutung</span></div>
-        </div>
-        <p class="scope-note">Standort Vorarlberg · regional verankert, projektbezogen auch darüber hinaus.</p>
+  <section class="usp" aria-labelledby="usp-title">
+    <div class="wrap usp-grid">
+      <div>
+        <p class="kicker">Ihr Nutzen</p>
+        <h2 id="usp-title"><span class="desktop-extra">Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen.</span><span class="mobile-only">Klarheit. Entscheidungen. Fortschritt.</span></h2>
+        <p class="desktop-extra">Komplexe Themen werden geordnet, Beteiligte abgestimmt und notwendige Entscheidungen früh sichtbar.</p>
       </div>
-    </section>
-
-    <section class="qualities" aria-label="Arbeitsweise und Stärken">
-      <div class="wrap qualities-grid">
-        <div class="quality">
-          <div class="quality-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><circle cx="24" cy="13" r="7"/><path d="M11 42v-5c0-8 5-14 13-14s13 6 13 14v5"/></svg>
-          </div>
-          <div><strong>Persönlich</strong><span>Direkter Ansprechpartner und klare Kommunikation auf Augenhöhe.</span></div>
-        </div>
-        <div class="quality">
-          <div class="quality-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 12-14"/></svg>
-          </div>
-          <div><strong>Praktisch</strong><span>Lösungen, die im Alltag funktionieren und umsetzbar bleiben.</span></div>
-        </div>
-        <div class="quality">
-          <div class="quality-icon" aria-hidden="true">
-            <svg class="handshake-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
-              <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
-              <path d="m21 3 1 11h-2"/>
-              <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
-              <path d="M3 4h8"/>
-            </svg>
-          </div>
-          <div><strong>Verlässlich</strong><span>Absprachen, Termine und offene Punkte transparent im Blick.</span></div>
-        </div>
-        <div class="quality">
-          <div class="quality-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M12 8h8c0-3 2-5 5-5s5 2 5 5v3h8v8h3c3 0 5 2 5 5s-2 5-5 5h-3v8h-8v-3c0-3-2-5-5-5s-5 2-5 5v3h-8v-8H9c-3 0-5-2-5-5s2-5 5-5h3V8Z"/>
-            </svg>
-          </div>
-          <div><strong>Vielseitig</strong><span>Erfahrung aus Industrie, Sanierung und praktischer Projektarbeit.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leistungen">
-      <div class="wrap">
-        <div class="section-kicker">Leistungen</div>
-        <h2>Ein Ansatz. Unterschiedliche Projekte.</h2>
-        <p class="section-intro">Ob Industrieprojekt, Sanierung oder privates Vorhaben: Meine Leistungen greifen je nach Projekt ineinander – mit dem Ziel, Überblick zu schaffen, Beteiligte abzustimmen und Leistung, Termine und Kosten im Blick zu behalten.</p>
-        <div class="services">
-          <article class="card">
-            <div class="card-label">Projekt &amp; Koordination</div>
-            <h3>Projekte klar steuern</h3>
-            <ul>
-              <li>Projektleitung und Projektkoordination</li>
-              <li>Aufgaben, Termine und Schnittstellen im Blick</li>
-              <li>Beteiligte und Fachbereiche abstimmen</li>
-              <li>Offene Punkte transparent nachverfolgen</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-label">Prozesse &amp; Optimierung</div>
-            <h3>Abläufe sinnvoll verbessern</h3>
-            <ul>
-              <li>Prozesse und Abläufe strukturieren</li>
-              <li>Prioritäten und Abhängigkeiten sichtbar machen</li>
-              <li>Produkt-, Ablauf- und Organisationsoptimierung</li>
-              <li>Technische Beschaffung und Umsetzung begleiten</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-label">Sanierung &amp; Begleitung</div>
-            <h3>Sanierungen strukturiert begleiten</h3>
-            <ul>
-              <li>Sanierungs- und Umbauprojekte koordinieren</li>
-              <li>Handwerker und Dienstleister abstimmen</li>
-              <li>Maßnahmen, Termine und Kosten überblicken</li>
-              <li>Praktische Unterstützung nach Vereinbarung</li>
-            </ul>
-          </article>
-        </div>
-        <div class="service-note">Je nach Projekt kombiniere ich die passenden Leistungen. Umfang und Schwerpunkt richten sich nach den konkreten Anforderungen des Vorhabens.</div>
-      </div>
-    </section>
-
-    <section class="competence-teaser" aria-labelledby="kompetenz-teaser-title">
-      <div class="wrap competence-box">
-        <div>
-          <div class="section-kicker">Erfahrung &amp; Kompetenz</div>
-          <h2 id="kompetenz-teaser-title">Mehr zum beruflichen Hintergrund.</h2>
-          <p>Berufliche Erfahrung, Kompetenzfelder sowie Aus- und Weiterbildungen finden Sie gebündelt im Kompetenzprofil.</p>
-        </div>
-        <a class="text-link" href="erfahrung-kompetenz.html">Zum Kompetenzprofil</a>
-      </div>
-    </section>
-
-    <section class="promise">
-      <div class="wrap promise-grid">
-        <div>
-          <div class="section-kicker">DER PROJEKTMACHER</div>
-          <h2>Klarheit schaffen. Fundiert entscheiden. Projekte voranbringen.</h2>
-          <p>Sie behalten den Überblick, ohne jedem offenen Punkt selbst hinterherlaufen zu müssen. Ich bündele Informationen, koordiniere Beteiligte und mache sichtbar, wo Entscheidungen oder weitere Maßnahmen erforderlich sind.</p>
-        </div>
-        <div class="points">
-          <div class="point"><strong>Roter Faden</strong><span>Komplexe Themen werden geordnet, priorisiert und nachvollziehbar.</span></div>
-          <div class="point"><strong>Leistung · Termine · Kosten</strong><span>Die drei zentralen Projektgrößen bleiben gemeinsam im Blick.</span></div>
-          <div class="point"><strong>Gute Entscheidungen</strong><span>Fakten, Auswirkungen und Risiken werden transparent und nachvollziehbar.</span></div>
-          <div class="point"><strong>Klare nächste Schritte</strong><span>Beschlüsse, offene Punkte und notwendige Maßnahmen bleiben sichtbar.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="kontakt">
-      <div class="wrap contact-box">
-        <div>
-          <div class="section-kicker">Kontakt</div>
-          <h2>Ein Projekt steht an – aber die Zeit für Koordination und Umsetzung fehlt?</h2>
-          <p><strong>Ich kümmere mich darum.</strong> Schreiben Sie kurz, worum es geht. Ich melde mich persönlich zurück.</p>
-        </div>
-        <a class="email-big" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-row">
-      <div class="footer-brand">DER PROJEKTMACHER</div>
-      <div class="footer-links">
-        <a href="erfahrung-kompetenz.html">Erfahrung &amp; Kompetenz</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+      <div class="usp-points">
+        <div class="usp-point"><strong>Roter Faden</strong><span>Prioritäten und Abhängigkeiten bleiben nachvollziehbar.</span></div>
+        <div class="usp-point"><strong>Leistung · Termine · Kosten</strong><span>Die zentralen Projektgrößen bleiben gemeinsam im Blick.</span></div>
+        <div class="usp-point"><strong>Klare Entscheidungen</strong><span>Fakten und Auswirkungen werden transparent.</span></div>
+        <div class="usp-point desktop-extra"><strong>Nächste Schritte</strong><span>Offene Punkte und Maßnahmen bleiben sichtbar.</span></div>
       </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="section" aria-labelledby="felder-title">
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker">Einsatzfelder</p><h2 id="felder-title">Wo DER PROJEKTMACHER unterstützen soll.</h2></div></div>
+      <div class="fields">
+        <div class="field"><div class="icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M10 54V29l14 7V20l14 8V14l10 5v35H10Z"/><path d="M17 45h4M27 45h4M37 45h4M17 51h4M27 51h4M37 51h4"/></svg></div><div><strong>Unternehmen &amp; Industrie</strong><span>Projekte · Prozesse · Organisation</span></div></div>
+        <div class="field"><div class="icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M9 31 32 11l23 20"/><path d="M14 28v26h36V28"/><path d="M26 54V39h12v15"/></svg></div><div><strong>Bau &amp; Sanierung</strong><span>Sanierung · Umbau · Koordination</span></div></div>
+        <div class="field"><div class="icon" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="26" cy="20" r="9"/><path d="M10 52c0-10 7-18 16-18s16 8 16 18"/><circle cx="46" cy="26" r="6"/><path d="M39 39c2-4 5-7 9-7 6 0 10 5 10 12"/></svg></div><div><strong>Privat &amp; Objekt</strong><span>Organisation · konkrete Vorhaben</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" aria-labelledby="leistungen-title">
+    <div class="wrap">
+      <div class="section-head"><div><p class="kicker">Geplante Schwerpunkte</p><h2 id="leistungen-title">Ein Ansatz. Unterschiedliche Projekte.</h2><p class="section-intro">Die folgenden Schwerpunkte sind für den späteren Geschäftsbetrieb vorgesehen. Der konkrete Leistungsumfang richtet sich nach den dann bestehenden Qualifikationen und Gewerbeberechtigungen.</p></div></div>
+      <div class="services">
+        <article class="service"><div class="label">Projekt &amp; Koordination</div><h3>Projekte klar steuern</h3><p>Aufgaben, Termine, Schnittstellen und Beteiligte im Blick.</p></article>
+        <article class="service"><div class="label">Prozesse &amp; Optimierung</div><h3>Abläufe sinnvoll verbessern</h3><p>Prioritäten klären, Abläufe strukturieren und Umsetzung begleiten.</p></article>
+        <article class="service"><div class="label">Sanierung &amp; Begleitung</div><h3>Vorhaben strukturiert begleiten</h3><p>Maßnahmen, Beteiligte, Termine und Kosten übersichtlich koordinieren.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qualities" aria-label="Arbeitsweise und Stärken">
+    <div class="wrap qualities-grid">
+      <div class="quality"><div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="13" r="7"/><path d="M11 42v-5c0-8 5-14 13-14s13 6 13 14v5"/></svg></div><div><strong>Persönlich</strong><span>Direkter Ansprechpartner.</span></div></div>
+      <div class="quality"><div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 12-14"/></svg></div><div><strong>Praktisch</strong><span>Lösungen, die funktionieren.</span></div></div>
+      <div class="quality"><div class="icon hand" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></div><div><strong>Verlässlich</strong><span>Absprachen im Blick.</span></div></div>
+      <div class="quality"><div class="icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 8h8c0-3 2-5 5-5s5 2 5 5v3h8v8h3c3 0 5 2 5 5s-2 5-5 5h-3v8h-8v-3c0-3-2-5-5-5s-5 2-5 5v3h-8v-8H9c-3 0-5-2-5-5s2-5 5-5h3V8Z"/></svg></div><div><strong>Vielseitig</strong><span>Industrie · Sanierung · Projektpraxis.</span></div></div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Erfahrung">
+    <div class="wrap trust-grid">
+      <div class="metric"><strong>30+ Jahre Praxis</strong><span>Technik &amp; Umsetzung</span></div>
+      <div class="metric"><strong>20+ Jahre Projekte</strong><span>Verantwortung &amp; Schnittstellen</span></div>
+      <a class="text-link" href="erfahrung-kompetenz.html">Erfahrung &amp; Kompetenz</a>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div class="wrap contact-box">
+      <div><p class="kicker">Kontakt</p><h2>Fragen zum geplanten Angebot?</h2><p>Die Website und das zukünftige Gewerbe befinden sich noch im Aufbau.</p></div>
+      <a class="email" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><strong>DER PROJEKTMACHER</strong><nav class="footer-links" aria-label="Fußnavigation"><a href="erfahrung-kompetenz.html">Kompetenzprofil</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div></footer>
 </body>
 </html>
