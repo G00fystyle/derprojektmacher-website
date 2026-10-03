@@ -225,3 +225,23 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .submit-button{width:100%}
   .competence-summary,.competence-next{grid-template-columns:1fr}
 }
+
+
+/* V16.6 desktop alignment with the compact mobile design */
+.hero h1{max-width:700px}
+.contact-box{grid-template-columns:minmax(0,1fr) minmax(480px,560px);gap:40px;border-left:0;padding:0}
+.contact-actions{display:grid;grid-template-columns:minmax(250px,1fr) auto minmax(170px,.72fr);align-items:center;gap:12px;min-width:0}
+.contact-or{display:inline-flex;align-items:center;justify-content:center;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.email-button,.form-button{width:100%}
+
+@media(max-width:940px){
+  .contact-box{grid-template-columns:1fr;gap:22px}
+  .contact-actions{grid-template-columns:1fr auto 1fr;width:100%}
+}
+
+@media(max-width:760px){
+  .hero h1{max-width:100%}
+  .contact-box{border-left:0;padding:0}
+  .contact-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:14px;width:100%}
+  .contact-or{min-height:22px;font-size:.7rem}
+}

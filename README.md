@@ -89,3 +89,7 @@ Einrichtung:
 Bis der Endpunkt eingetragen ist, fängt die Seite das Absenden ab und verweist auf die E-Mail-Adresse.
 
 Dateien: Das Formular erlaubt bis zu 5 Dateien mit je maximal 20 MB und akzeptiert Bilder, PDF sowie gängige Office-Dateien. Bei unbekannten Office-Dateien ist ein Dienst mit Malware-/Virenscan zu bevorzugen; bei Basin ist Virenscan laut Anbieter erst im Pro-Tarif enthalten.
+
+
+## V16.6
+Desktop an die kompakte Mobile-Linie angeglichen: Hero ohne doppelte Slogan-Wiederholung, Kontaktbereich ohne orange Trennlinie, E-Mail und Kontaktformular klar getrennt; Kontaktformular öffnet aus der Startseite in einem neuen Tab.
