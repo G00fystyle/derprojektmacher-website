@@ -1,4 +1,4 @@
-# DER PROJEKTMACHER – Website V16.2 (Prelaunch)
+# DER PROJEKTMACHER – Website V16.4 (Prelaunch)
 
 ## Upload auf GitHub Pages
 Alle Dateien und Ordner dieses Pakets in das Root-Verzeichnis des GitHub-Repositories hochladen. Die Ordnerstruktur muss erhalten bleiben.
@@ -7,6 +7,7 @@ Wichtige Dateien:
 - `index.html` – einzige Startseite für Desktop **und** Mobil
 - `assets/css/site.css` – gemeinsames responsives Design für Startseite und Unterseiten
 - `erfahrung-kompetenz.html` – vorbereitete Kompetenz-Unterseite
+- `digital-marketing.html` – Unterseite für die digitale Umsetzung
 - `impressum.html` / `datenschutz.html` – vorläufige Rechtstexte mit klar markierten Ergänzungen
 - `404.html`, `logo.svg`, `favicon.svg`, `CNAME`, `.nojekyll`, `robots.txt`, `sitemap.xml`
 
@@ -58,3 +59,15 @@ Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis
 - Neuer Schwerpunkt „Digital & Marketing“ auf der Startseite.
 - Neue Unterseite `digital-marketing.html` für Details zu Recruiting, Kundengewinnung, Websites, digitalen Abläufen, Anbieter-/Handwerkerrecherche sowie Angebotsvergleich/Preisspiegel.
 - Die öffentliche Website nennt das DWP-System bewusst nicht als Qualifikation oder Partnerschaft. Diese Bezeichnung erst nach tatsächlich absolvierter Einschulung/aktiver Berechtigung und mit zulässiger Markenverwendung ergänzen.
+
+
+## Änderungen V16.4
+- Der Prelaunch-Hinweis bleibt als einziger Hinweis ganz oben: „DER PROJEKTMACHER befindet sich derzeit im Aufbau; der Geschäftsbetrieb wurde noch nicht aufgenommen.“
+- „Digital & Marketing“ auf der Startseite in „Digitale Umsetzung“ überführt, damit der Bereich stärker zur Marke DER PROJEKTMACHER passt.
+- Mobile Schwerpunktkarten weiter verdichtet. Die ausführlichen Inhalte bleiben über aufklappbare Details auch mobil zugänglich.
+- Wichtige Inhalte werden damit nicht mehr ausschließlich über `.desktop-extra` ausgeblendet.
+- Mobile Touchflächen für Details, Kompetenzprofil, Kontakt und Footerlinks vergrößert.
+- Hero-Text und Kontaktformulierung sprachlich gestrafft; Wiederholungen reduziert.
+- Canonical-Tags auf relevanten Unterseiten ergänzt und OpenGraph-Basisdaten auf der Startseite vorbereitet.
+- Strukturierte Unternehmensdaten / LocalBusiness werden bewusst erst nach tatsächlicher Gewerbeanmeldung ergänzt.
+- Zum offiziellen Start: oberen Prelaunch-Hinweis und `noindex,nofollow` entfernen, Search Console/Bing einrichten und optional einen dezenten Kontakt-CTA im Hero aktivieren.
