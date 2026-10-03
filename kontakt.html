@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontakt | DER PROJEKTMACHER</title>
+  <meta name="description" content="Kontakt zu DER PROJEKTMACHER – schnell und unkompliziert per Formular oder E-Mail.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#102231">
+  <link rel="canonical" href="https://derprojektmacher.eu/kontakt.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="prelaunch" role="note"><div class="wrap prelaunch-inner"><span>DER PROJEKTMACHER befindet sich derzeit im Aufbau; der Geschäftsbetrieb wurde noch nicht aufgenommen.</span></div></div>
+<header class="site-header"><div class="wrap header-inner"><a href="index.html" aria-label="DER PROJEKTMACHER Startseite"><img class="site-logo" src="logo.svg" alt="DER PROJEKTMACHER – Einfach ans Ziel."></a></div></header>
+<main>
+  <section class="contact-page">
+    <div class="wrap contact-form-wrap">
+      <div class="contact-form-copy">
+        <p class="kicker">Kontakt</p>
+        <h1>Schnell und unkompliziert Kontakt aufnehmen.</h1>
+        <p>Schreiben Sie kurz, worum es geht. Ich melde mich persönlich zurück.</p>
+        <p>Alternativ erreichen Sie mich direkt per E-Mail.</p>
+        <a class="email-button" href="mailto:office@derprojektmacher.eu">office@derprojektmacher.eu</a>
+      </div>
+
+      <form class="contact-form-card" id="contactForm" action="https://usebasin.com/f/REPLACE_WITH_YOUR_BASIN_FORM_ID" method="POST" enctype="multipart/form-data" accept-charset="UTF-8" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">E-Mail *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field full">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-field full">
+            <label for="message">Kurze Beschreibung *</label>
+            <textarea id="message" name="message" placeholder="Worum geht es? Was soll geklärt oder umgesetzt werden?" required></textarea>
+          </div>
+          <div class="form-field full file-row">
+            <label for="attachments">Dateien anhängen</label>
+            <input id="attachments" name="attachments[]" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,image/jpeg,image/png,image/webp,application/pdf">
+            <p class="form-help">Optional: Fotos, Skizzen, Pläne oder Unterlagen. Bis zu 5 Dateien, je max. 20 MB.</p>
+            <ul class="file-list" id="fileList" aria-live="polite"></ul>
+          </div>
+          <div class="form-field full">
+            <label class="checkbox-row"><input type="checkbox" name="privacy" value="accepted" required><span>Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Kontaktaufnahme zu. *</span></label>
+          </div>
+          <input type="hidden" name="_subject" value="Neue Anfrage über derprojektmacher.eu">
+          <div class="form-field full form-actions">
+            <button class="submit-button" type="submit">Nachricht senden</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><strong>DER PROJEKTMACHER</strong><nav class="footer-links" aria-label="Fußnavigation"><a href="index.html">Startseite</a><a href="erfahrung-kompetenz.html">Kompetenzprofil</a><a href="digital-marketing.html">Digitale Umsetzung</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div></footer>
+<script>
+(function(){
+  const form=document.getElementById('contactForm');
+  const input=document.getElementById('attachments');
+  const list=document.getElementById('fileList');
+  const status=document.getElementById('formStatus');
+  const endpointReady=!form.action.includes('REPLACE_WITH_YOUR_BASIN_FORM_ID');
+  const allowed=new Set(['jpg','jpeg','png','webp','pdf','doc','docx','xls','xlsx','ppt','pptx']);
+  const maxFiles=5;
+  const maxSize=20*1024*1024;
+
+  function showFiles(){
+    list.innerHTML='';
+    const files=[...input.files];
+    files.forEach(file=>{
+      const li=document.createElement('li');
+      li.textContent=file.name+' · '+(file.size/1024/1024).toFixed(1)+' MB';
+      list.appendChild(li);
+    });
+  }
+  input.addEventListener('change',showFiles);
+
+  form.addEventListener('submit',function(e){
+    status.className='form-status';
+    status.textContent='';
+    if(!form.checkValidity()){
+      e.preventDefault();
+      form.reportValidity();
+      return;
+    }
+    const files=[...input.files];
+    if(files.length>maxFiles){
+      e.preventDefault();
+      status.className='form-status error';
+      status.textContent='Bitte höchstens 5 Dateien auswählen.';
+      return;
+    }
+    for(const file of files){
+      const ext=(file.name.split('.').pop()||'').toLowerCase();
+      if(!allowed.has(ext) || file.size>maxSize){
+        e.preventDefault();
+        status.className='form-status error';
+        status.textContent='Bitte nur unterstützte Dateien bis maximal 20 MB je Datei hochladen.';
+        return;
+      }
+    }
+    if(!endpointReady){
+      e.preventDefault();
+      status.className='form-status error';
+      status.innerHTML='Das Kontaktformular wird derzeit technisch eingerichtet. Bitte nutzen Sie vorerst die E-Mail-Adresse.';
+    }
+  });
+})();
+</script>
+</body>
+</html>

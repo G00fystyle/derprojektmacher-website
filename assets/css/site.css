@@ -158,3 +158,70 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .legal h1{font-size:1.85rem}.legal h2{font-size:1.1rem;margin-top:22px}.legal p{font-size:.9rem}.legal dl{grid-template-columns:1fr;gap:2px}.legal dt{margin-top:8px}.legal dd{font-size:.9rem}
   .status-badge{font-size:.72rem;padding:6px 9px}
 }
+
+/* V16.5 refinements */
+.hero-first{color:var(--ink)!important}
+.usp-point{border-top:0;padding-top:0;position:relative;padding-left:18px}
+.usp-point::before{content:"";position:absolute;left:0;top:.52em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.trust-grid{background:transparent;border:0;gap:10px}
+.metric{border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;min-height:74px;padding:16px 14px}
+.metric strong{font-size:.98rem}
+.contact-actions{display:flex;flex-direction:column;align-items:stretch;gap:9px;min-width:250px}
+.email-button,.form-button,.submit-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:5px;padding:10px 16px;font-weight:900;text-decoration:none;line-height:1.25;text-align:center}
+.email-button,.submit-button{background:var(--orange);color:#fff;border:2px solid var(--orange)}
+.email-button:hover,.submit-button:hover{background:var(--orange-dark);border-color:var(--orange-dark)}
+.form-button{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.form-button:hover{background:var(--navy);color:#fff}
+
+.contact-page{padding:44px 0 58px;background:var(--soft)}
+.contact-form-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.contact-form-copy h1{font-size:clamp(2rem,4vw,3rem);line-height:1.04;letter-spacing:-.04em;margin:0 0 14px}
+.contact-form-copy p{color:var(--muted);margin:0 0 14px}
+.contact-form-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:.84rem;font-weight:800;color:var(--navy)}
+.form-field input,.form-field textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:1px solid #cfd7dc;border-radius:5px;padding:11px 12px;outline:none}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(244,90,20,.12)}
+.form-field textarea{min-height:150px;resize:vertical}
+.form-help{font-size:.75rem;color:var(--muted);margin:0}
+.file-row{padding:12px;border:1px dashed #c9d2d8;border-radius:6px;background:#fafbfb}
+.file-list{margin:7px 0 0;padding:0;list-style:none;font-size:.75rem;color:var(--muted)}
+.checkbox-row{display:grid;grid-template-columns:18px 1fr;gap:9px;align-items:start;font-size:.78rem;color:var(--muted)}
+.checkbox-row input{margin-top:3px}
+.form-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:4px}
+.submit-button{font:inherit;cursor:pointer}
+.submit-button[disabled]{opacity:.55;cursor:not-allowed}
+.form-status{font-size:.78rem;color:var(--muted);margin:0}
+.form-status.error{color:#a33219}
+.form-status.ready{color:#27633a}
+.competence-next{margin-top:16px}
+
+@media(max-width:760px){
+  .header-inner{padding:18px 0 16px}
+  .hero{padding:34px 0 34px}
+  .hero h1{font-size:clamp(1.95rem,8.5vw,2.25rem);line-height:1.04}
+  .hero h1 span{display:block}
+  .hero .lead{margin-top:18px;font-size:.95rem;line-height:1.55}
+  .hero .micro-values{margin-top:19px}
+  .usp{padding:22px 0 24px}
+  .usp h2{font-size:1.42rem;line-height:1.12;margin-bottom:2px}
+  .usp-points{gap:8px 14px;margin-top:5px}
+  .usp-point{padding-left:14px;min-height:30px;display:flex;align-items:center}
+  .usp-point::before{top:50%;transform:translateY(-50%);width:6px;height:6px}
+  .usp-point strong{font-size:.78rem;line-height:1.28}
+  .trust-grid{grid-template-columns:1fr 1fr;gap:7px}
+  .metric{min-height:64px;padding:11px 10px}
+  .metric strong{font-size:.78rem;line-height:1.25}
+  .contact-actions{margin-top:14px;min-width:0;width:100%}
+  .email-button,.form-button{width:100%;min-height:48px;font-size:.85rem}
+  .contact-form-wrap{grid-template-columns:1fr;gap:20px}
+  .contact-page{padding:28px 0 38px}
+  .contact-form-copy h1{font-size:1.75rem}
+  .contact-form-card{padding:16px 14px}
+  .form-grid{grid-template-columns:1fr;gap:13px}
+  .form-field.full{grid-column:auto}
+  .submit-button{width:100%}
+  .competence-summary,.competence-next{grid-template-columns:1fr}
+}

@@ -71,3 +71,21 @@ Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis
 - Canonical-Tags auf relevanten Unterseiten ergänzt und OpenGraph-Basisdaten auf der Startseite vorbereitet.
 - Strukturierte Unternehmensdaten / LocalBusiness werden bewusst erst nach tatsächlicher Gewerbeanmeldung ergänzt.
 - Zum offiziellen Start: oberen Prelaunch-Hinweis und `noindex,nofollow` entfernen, Search Console/Bing einrichten und optional einen dezenten Kontakt-CTA im Hero aktivieren.
+
+
+## Kontaktformular und Datei-Upload
+
+Die Website enthält ab V16.5 eine eigene `kontakt.html`. GitHub Pages ist statisch und kann Formularnachrichten oder Datei-Uploads nicht selbst entgegennehmen. Das Formular ist deshalb für einen externen Formular-Endpunkt vorbereitet.
+
+Empfohlene einfache Lösung: Basin. Im kostenlosen Tarif sind aktuell 1 Formular, 50 Einsendungen pro Monat und Datei-Uploads enthalten.
+
+Einrichtung:
+1. Bei Basin ein Formular anlegen.
+2. Die persönliche Formular-URL kopieren, z. B. `https://usebasin.com/f/abc123...`.
+3. In `kontakt.html` die Platzhalter-URL `https://usebasin.com/f/REPLACE_WITH_YOUR_BASIN_FORM_ID` durch die echte URL ersetzen.
+4. Optional bei Basin die Domain `derprojektmacher.eu` beschränken und Spam-Schutz aktivieren.
+5. Danach Testnachricht inklusive Datei senden.
+
+Bis der Endpunkt eingetragen ist, fängt die Seite das Absenden ab und verweist auf die E-Mail-Adresse.
+
+Dateien: Das Formular erlaubt bis zu 5 Dateien mit je maximal 20 MB und akzeptiert Bilder, PDF sowie gängige Office-Dateien. Bei unbekannten Office-Dateien ist ein Dienst mit Malware-/Virenscan zu bevorzugen; bei Basin ist Virenscan laut Anbieter erst im Pro-Tarif enthalten.
