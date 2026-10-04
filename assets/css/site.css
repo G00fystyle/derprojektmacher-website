@@ -339,3 +339,74 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .contact-direct p{font-size:.8rem}
   .contact-direct .email-button{font-size:.82rem;overflow-wrap:anywhere}
 }
+
+/* V17.2 – Kontakt Variante B: dunkler Markenbereich, helle Funktionskarten */
+.contact-page-v171{
+  background:var(--navy);
+  color:#fff;
+  padding:46px 0 58px;
+}
+.contact-page-v171 .contact-flow-head .kicker{color:var(--orange)}
+.contact-page-v171 .contact-flow-head h1{color:#fff}
+.contact-page-v171 .contact-flow-head>p:last-child{color:#d7e0e6}
+.contact-page-v171 .form-embed-card,
+.contact-page-v171 .upload-card{
+  background:#fff;
+  color:var(--ink);
+  border-color:rgba(255,255,255,.15);
+  box-shadow:0 14px 34px rgba(0,0,0,.16);
+}
+.contact-page-v171 .form-embed-card{border-top:4px solid var(--orange)}
+.contact-page-v171 .upload-card{border-top:4px solid var(--orange)}
+.contact-page-v171 .forms-embed-shell{
+  background:#f7f8f9;
+  border-color:#d8e0e5;
+}
+.contact-page-v171 .forms-embed{background:#f7f8f9}
+.contact-page-v171 .upload-note{background:#f3f6f7}
+.contact-page-v171 .contact-direct{
+  background:#142c3d;
+  border:1px solid rgba(255,255,255,.16);
+  color:#fff;
+  box-shadow:0 10px 26px rgba(0,0,0,.12);
+}
+.contact-page-v171 .contact-direct h2{color:#fff}
+.contact-page-v171 .contact-direct p{color:#cbd6dd}
+.contact-page-v171 .contact-direct .option-kicker{color:var(--orange)!important}
+.contact-page-v171 .contact-direct .email-button{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+.contact-page-v171 .contact-direct .email-button:hover{
+  background:var(--orange-dark);
+  border-color:var(--orange-dark);
+}
+.contact-page-v171 .upload-button{
+  background:#fff;
+  color:var(--orange);
+  border-color:var(--orange);
+}
+.contact-page-v171 .upload-button:hover{
+  background:var(--orange-soft);
+  color:var(--orange-dark);
+  border-color:var(--orange-dark);
+}
+
+/* Das eingebettete Formular bleibt auch mobil direkt sichtbar. */
+.forms-embed-shell{overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.forms-embed{touch-action:auto}
+
+@media(max-width:760px){
+  .contact-page-v171{padding:26px 0 36px}
+  .contact-page-v171 .contact-flow-head h1{color:#fff}
+  .contact-page-v171 .contact-flow-head>p:last-child{color:#d7e0e6}
+  .contact-page-v171 .form-embed-card,
+  .contact-page-v171 .upload-card{box-shadow:none}
+  .contact-page-v171 .form-embed-card{padding:12px 8px 10px}
+  .contact-page-v171 .forms-embed-shell{min-height:820px;border-radius:5px}
+  .contact-page-v171 .forms-embed{height:820px;min-height:820px}
+  .contact-page-v171 .upload-card{padding:15px 14px}
+  .contact-page-v171 .contact-direct{background:#142c3d}
+  .contact-page-v171 .embed-fallback{display:none}
+}
