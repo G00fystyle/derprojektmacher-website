@@ -410,3 +410,33 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .contact-page-v171 .contact-direct{background:#142c3d}
   .contact-page-v171 .embed-fallback{display:none}
 }
+
+
+/* V17.3 – eigener Datenschutzhinweis vor Microsoft Forms */
+.privacy-note{
+  margin:0 0 14px;
+  display:grid;
+  grid-template-columns:30px minmax(0,1fr);
+  gap:10px;
+  align-items:start;
+  padding:12px 14px;
+  background:#eef3f5;
+  border:1px solid #d7e0e5;
+  border-radius:7px;
+  color:var(--ink);
+}
+.privacy-note-icon{
+  width:26px;height:26px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--navy);color:#fff;font-weight:800;font-size:.78rem;
+}
+.privacy-note strong{display:block;margin:1px 0 3px;font-size:.86rem;color:var(--navy)}
+.privacy-note p{margin:0;font-size:.78rem;line-height:1.45;color:var(--muted)}
+.privacy-note a{color:var(--orange-dark);font-weight:700;text-decoration:none}
+.privacy-note a:hover{text-decoration:underline}
+@media(max-width:760px){
+  .privacy-note{grid-template-columns:24px minmax(0,1fr);padding:10px 11px;gap:8px;margin-bottom:10px}
+  .privacy-note-icon{width:22px;height:22px;font-size:.68rem}
+  .privacy-note strong{font-size:.78rem}
+  .privacy-note p{font-size:.7rem;line-height:1.4}
+}
