@@ -598,3 +598,58 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .contact-actions-single{display:block!important;margin-top:14px;width:100%;min-width:0}
   .contact-actions-single .contact-main-cta{width:100%}
 }
+
+/* V17.6 — Kontaktseite: Navy-Bänder exakt im Stil der Hauptseite */
+.contact-main-v175 .contact-intro-band{
+  background:var(--navy);
+  color:#fff;
+  border-top:0;
+  border-bottom:0;
+  padding:44px 0;
+}
+.contact-main-v175 .contact-intro-band .contact-flow-head .kicker{color:var(--orange)}
+.contact-main-v175 .contact-intro-band .contact-flow-head h1{color:#fff}
+.contact-main-v175 .contact-intro-band .contact-flow-head>p:last-child{color:#d7e0e6}
+
+.contact-main-v175 .contact-form-band{
+  background:#fff;
+  padding:30px 0 34px;
+}
+
+.contact-main-v175 .contact-direct-band{
+  background:var(--navy);
+  color:#fff;
+  border-top:0;
+  padding:30px 0;
+}
+.contact-main-v175 .contact-direct-band .contact-direct{
+  margin:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  padding:0;
+  box-shadow:none;
+}
+.contact-main-v175 .contact-direct-band .contact-direct h2{color:#fff}
+.contact-main-v175 .contact-direct-band .contact-direct p{color:#d7e0e6}
+.contact-main-v175 .contact-direct-band .contact-direct .option-kicker{color:var(--orange)!important}
+.contact-main-v175 .contact-direct-band .email-button{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+.contact-main-v175 .contact-direct-band .email-button:hover{
+  background:var(--orange-dark);
+  border-color:var(--orange-dark);
+  color:#fff;
+}
+
+@media (max-width:760px){
+  .contact-main-v175 .contact-intro-band{padding:28px 0 24px}
+  .contact-main-v175 .contact-form-band{padding:16px 0 18px}
+  .contact-main-v175 .contact-direct-band{padding:20px 0 24px}
+  .contact-main-v175 .contact-direct-band .contact-direct{
+    background:transparent;
+    padding:0;
+  }
+}
