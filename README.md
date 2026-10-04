@@ -72,7 +72,7 @@ Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis
 - Strukturierte Unternehmensdaten / LocalBusiness werden bewusst erst nach tatsächlicher Gewerbeanmeldung ergänzt.
 - Zum offiziellen Start: oberen Prelaunch-Hinweis und `noindex,nofollow` entfernen, Search Console/Bing einrichten und optional einen dezenten Kontakt-CTA im Hero aktivieren.
 
-## V17 – Microsoft-365-Kontaktintegration
+## V17.1 – Microsoft-365-Kontaktintegration
 - Kontaktformular: Microsoft Forms (`https://forms.cloud.microsoft/e/hC9kR78pGn`).
 - Neue Antworten werden über Power Automate an `office@derprojektmacher.eu` weitergeleitet.
 - Datei-Upload: OneDrive/SharePoint-Dateianforderung im Bereich `Kundenanfragen/Uploads`.
