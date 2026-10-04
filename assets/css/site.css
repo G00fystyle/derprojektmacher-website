@@ -26,7 +26,7 @@ img,svg{max-width:100%;height:auto}
 .kicker{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900;color:var(--orange);margin:0 0 10px}
 .hero{padding:58px 0 50px;background:linear-gradient(125deg,#fff 0%,#fff 70%,#f4f6f7 100%)}
 .hero h1{font-size:clamp(2.65rem,4.1vw,3.55rem);line-height:1.01;letter-spacing:-.045em;margin:0;max-width:760px}
-.hero h1 span{display:block;color:var(--navy)}
+.hero h1 span{display:block;color:var(--orange)}
 .hero .lead{font-size:1.12rem;max-width:670px;margin:22px 0 0;color:#44505c}
 .hero .micro-values{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0 0;padding:0;list-style:none;font-weight:800;font-size:.9rem}
 .hero .micro-values li::before{content:"✓";color:var(--orange);margin-right:7px}
@@ -35,7 +35,7 @@ img,svg{max-width:100%;height:auto}
 .usp h2{font-size:clamp(2rem,3.3vw,2.65rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 12px;max-width:620px}
 .usp p{margin:0;color:#d7e0e6;max-width:650px}
 .usp-points{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.usp-point{border-top:0;padding-top:10px}
+.usp-point{border-top:2px solid var(--orange);padding-top:10px}
 .usp-point strong{display:block;font-size:.98rem}
 .usp-point span{display:block;color:#b9c5cd;font-size:.86rem;margin-top:3px}
 .section{padding:48px 0}
@@ -77,10 +77,10 @@ img,svg{max-width:100%;height:auto}
 .text-link::after{content:" →"}
 .trust-link{display:block;width:max-content;margin:14px 0 0 auto;font-size:.88rem}
 .contact{padding:48px 0;background:var(--soft);border-top:1px solid var(--line)}
-.contact-box{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center;border-left:0;padding:4px 0 4px 20px}
+.contact-box{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center;border-left:5px solid var(--orange);padding:4px 0 4px 20px}
 .contact h2{font-size:clamp(1.7rem,3vw,2.25rem);line-height:1.08;letter-spacing:-.03em;margin:0 0 7px}
 .contact p{margin:0;color:var(--muted)}
-.email{font-weight:900;color:var(--navy);text-decoration:none;border-bottom:0;white-space:nowrap}
+.email{font-weight:900;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--orange);white-space:nowrap}
 footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
 .footer-row{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;font-size:.85rem}
 .footer-row strong{color:#fff}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{text-decoration:none}
@@ -88,7 +88,7 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
 .sub-hero h1{font-size:clamp(2.3rem,4.5vw,3.7rem);line-height:1.02;letter-spacing:-.04em;margin:0 0 14px}
 .sub-hero p{max-width:720px;color:#d9e1e6;margin:0;font-size:1.05rem}
 .sub-content{padding:52px 0}
-.notice{border:1px solid var(--line);background:var(--soft);padding:16px 18px;color:#46515d;margin-bottom:26px}
+.notice{border-left:4px solid var(--orange);background:var(--soft);padding:16px 18px;color:#46515d;margin-bottom:26px}
 .profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .profile-card{border:1px solid var(--line);border-radius:6px;padding:22px;background:#fff}
 .profile-card .small{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.09em;font-size:.72rem}
@@ -159,7 +159,7 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .status-badge{font-size:.72rem;padding:6px 9px}
 }
 
-/* Responsive components */
+/* V16.5 refinements */
 .hero-first{color:var(--ink)!important}
 .usp-point{border-top:0;padding-top:0;position:relative;padding-left:18px}
 .usp-point::before{content:"";position:absolute;left:0;top:.52em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
@@ -227,38 +227,56 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
 }
 
 
-/* V16.8: shared desktop and mobile design */
-.usp h2{font-size:clamp(1.6rem,2.8vw,2.15rem);line-height:1.15;max-width:470px}
-.usp .usp-benefit{margin-top:14px;color:#fff;font-weight:650;line-height:1.55}
-.contact-box{grid-template-columns:minmax(0,1fr) minmax(290px,350px);gap:48px;border:0;padding:0}
-.contact-actions{display:grid;grid-template-columns:1fr;gap:8px;min-width:0;margin:0}
-.contact-or{display:flex;justify-content:center;color:var(--muted);font-size:.72rem;line-height:1.25}
-.email-button,.form-button{width:100%;gap:8px;min-height:50px;font-size:.94rem}
-.email-button,.submit-button{background:var(--orange);border-color:var(--orange);color:var(--navy-deep)}
-.email-button:hover,.submit-button:hover{background:var(--orange-dark);color:#fff}
-.form-button{background:transparent;border:2px solid var(--orange);color:var(--navy)}
-.form-button:hover{background:var(--navy);border-color:var(--navy);color:#fff}
-a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
-footer a:focus-visible{outline-color:#fff}
-.contact-form-copy .email-button{max-width:350px}
-.form-availability{margin:0 0 20px;padding:12px 14px;background:var(--soft);border-radius:5px;color:var(--muted);font-size:.85rem;line-height:1.5}
-.checkbox-row input{width:18px;height:18px}
-.form-field input[type=file]{font-size:.8rem;padding:8px}
-@media(max-width:940px){
- .contact-box{grid-template-columns:minmax(0,1fr) minmax(280px,320px);gap:28px}
-}
-@media(max-width:760px){
- .usp h2{font-size:1.5rem;max-width:100%}
- .usp .usp-benefit{margin-top:10px;font-size:.9rem}
- .contact-box{display:grid;grid-template-columns:1fr;gap:18px;border:0;padding:0}
- .contact p{margin-bottom:0}
- .contact-actions{margin:0;gap:8px;min-width:0}
- .email-button,.form-button{font-size:.86rem;min-height:50px;overflow-wrap:anywhere}
- .contact-form-copy .email-button{max-width:none}
- .contact-form-copy h1{max-width:420px;line-height:1.15}
- .form-availability{font-size:.8rem;margin-bottom:16px}
- .focus-details summary,.focus-link,.footer-links a{min-height:44px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* V16.6 desktop alignment with the compact mobile design */
+.hero h1{max-width:700px}
+.contact-box{grid-template-columns:minmax(0,1fr) minmax(480px,560px);gap:40px;border-left:0;padding:0}
+.contact-actions{display:grid;grid-template-columns:minmax(250px,1fr) auto minmax(170px,.72fr);align-items:center;gap:12px;min-width:0}
+.contact-or{display:inline-flex;align-items:center;justify-content:center;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.email-button,.form-button{width:100%}
 
-.quality .icon svg{display:block;width:100%;height:100%;fill:none;stroke:#d5dde3;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:940px){
+  .contact-box{grid-template-columns:1fr;gap:22px}
+  .contact-actions{grid-template-columns:1fr auto 1fr;width:100%}
+}
+
+@media(max-width:760px){
+  .hero h1{max-width:100%}
+  .contact-box{border-left:0;padding:0}
+  .contact-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:14px;width:100%}
+  .contact-or{min-height:22px;font-size:.7rem}
+}
+
+
+/* V16.7 final visual refinements before form integration */
+.hero h1 span{color:var(--navy)}
+.usp-benefit{color:#d7e0e6;font-size:.82rem;line-height:1.42;margin-top:7px!important;max-width:36rem}
+.form-button{background:#fff;color:var(--orange);border-color:var(--orange)}
+.form-button:hover{background:var(--orange-soft);color:var(--orange-dark);border-color:var(--orange-dark)}
+
+@media(max-width:760px){
+  .hero h1 span{color:var(--navy)}
+  .usp-benefit{font-size:.78rem;line-height:1.38;margin-top:7px!important}
+}
+
+/* V17 Microsoft-365 Kontaktintegration */
+.contact-hub-wrap{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:38px;align-items:start}
+.contact-hub{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-option{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0;box-shadow:0 10px 24px rgba(16,34,49,.04)}
+.contact-option h2{font-size:1.42rem;line-height:1.12;margin:0 0 10px;color:var(--navy)}
+.contact-option p{color:var(--muted);margin:0 0 16px}
+.option-kicker{font-size:.72rem!important;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--orange)!important;margin-bottom:8px!important}
+.option-button{width:100%;min-height:50px}
+.option-note{font-size:.76rem!important;line-height:1.45;margin:10px 0 0!important}
+.primary-option{border-top:4px solid var(--orange)}
+.upload-option{border-top:4px solid var(--navy)}
+
+@media(max-width:940px){
+  .contact-hub-wrap{grid-template-columns:1fr;gap:24px}
+}
+
+@media(max-width:760px){
+  .contact-hub{grid-template-columns:1fr;gap:12px}
+  .contact-option{padding:18px 16px}
+  .contact-option h2{font-size:1.24rem}
+  .option-button{min-height:48px}
+}
