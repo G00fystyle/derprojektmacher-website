@@ -440,3 +440,92 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   .privacy-note strong{font-size:.78rem}
   .privacy-note p{font-size:.7rem;line-height:1.4}
 }
+
+/* V17.4 – Kontakt Variante A: hell, ruhig, hochwertig */
+.contact-page-v174{
+  background:#f5f7f8;
+  color:var(--ink);
+  padding:46px 0 58px;
+}
+.contact-page-v174 .contact-flow-head .kicker{color:var(--orange)}
+.contact-page-v174 .contact-flow-head h1{color:var(--navy)}
+.contact-page-v174 .contact-flow-head>p:last-child{color:var(--muted)}
+
+.contact-page-v174 .form-embed-card,
+.contact-page-v174 .upload-card{
+  background:#fff;
+  color:var(--ink);
+  border:1px solid #dde4e8;
+  border-top:2px solid var(--orange);
+  box-shadow:0 8px 24px rgba(16,34,49,.055);
+}
+.contact-page-v174 .step-number{
+  background:var(--orange);
+  color:#fff;
+}
+.contact-page-v174 .step-head h2{color:var(--navy)}
+.contact-page-v174 .option-kicker{color:var(--orange)!important}
+
+.contact-page-v174 .privacy-note{
+  background:#f7f9fa;
+  border-color:#dfe5e9;
+}
+.contact-page-v174 .privacy-note-icon{
+  background:#fff;
+  color:var(--orange);
+  border:1px solid #f3b08c;
+}
+
+.contact-page-v174 .forms-embed-shell{
+  background:#fafbfb;
+  border-color:#dfe5e9;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.7);
+}
+.contact-page-v174 .forms-embed{background:#fafbfb}
+
+.contact-page-v174 .upload-card>p{color:var(--muted)}
+.contact-page-v174 .upload-note{
+  background:#f7f9fa;
+  border-color:#dfe5e9;
+  color:var(--muted);
+}
+.contact-page-v174 .upload-note strong{color:var(--navy)}
+
+.contact-page-v174 .upload-button,
+.contact-page-v174 .email-button{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+.contact-page-v174 .upload-button:hover,
+.contact-page-v174 .email-button:hover{
+  background:var(--orange-dark);
+  border-color:var(--orange-dark);
+  color:#fff;
+}
+
+.contact-page-v174 .contact-direct{
+  background:#fff;
+  border:1px solid #dde4e8;
+  color:var(--ink);
+  box-shadow:0 6px 20px rgba(16,34,49,.04);
+}
+.contact-page-v174 .contact-direct h2{color:var(--navy)}
+.contact-page-v174 .contact-direct p{color:var(--muted)}
+.contact-page-v174 .contact-direct .option-kicker{color:var(--orange)!important}
+
+@media(max-width:760px){
+  .contact-page-v174{padding:24px 0 34px}
+  .contact-page-v174 .contact-flow-head h1{color:var(--navy)}
+  .contact-page-v174 .contact-flow-head>p:last-child{color:var(--muted)}
+  .contact-page-v174 .form-embed-card,
+  .contact-page-v174 .upload-card,
+  .contact-page-v174 .contact-direct{
+    box-shadow:none;
+  }
+  .contact-page-v174 .form-embed-card,
+  .contact-page-v174 .upload-card{
+    border-top-width:2px;
+  }
+  .contact-page-v174 .contact-direct{background:#fff}
+}

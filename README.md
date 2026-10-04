@@ -81,3 +81,7 @@ Auf der Startseite und den regulären Unterseiten steht nur ein dezenter Hinweis
 - Für eine eindeutige Zuordnung bittet die Kontaktseite darum, beim Upload denselben Namen wie im Formular zu verwenden.
 - Basin wird nicht mehr verwendet.
 - Vor dem offiziellen Start Datenschutz/AVV und die finalen Microsoft-365-Einstellungen prüfen.
+
+
+## V17.4
+Kontaktseite auf die helle, ruhige Variante A umgestellt: neutral heller Außenbereich, weiße Karten, Orange nur als Akzent und für Aktionen.
