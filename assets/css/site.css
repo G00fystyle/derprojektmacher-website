@@ -529,3 +529,72 @@ footer{background:var(--navy-deep);color:#d5dde3;padding:21px 0}
   }
   .contact-page-v174 .contact-direct{background:#fff}
 }
+
+
+/* V17.5 – Kontakt Variante A, bereinigt: helle Vollbreiten-Bänder + eindeutige CTA-Hierarchie */
+.contact-main-v175{background:#fff;color:var(--ink)}
+.contact-intro-band{background:#f5f7f8;border-top:1px solid #e2e7ea;border-bottom:1px solid #e2e7ea;padding:42px 0 34px}
+.contact-form-band{background:#fff;padding:28px 0 30px}
+.contact-direct-band{background:#f5f7f8;border-top:1px solid #e2e7ea;padding:24px 0 30px}
+.contact-main-v175 .contact-flow-wrap{max-width:1120px}
+.contact-main-v175 .contact-flow-head{max-width:760px;margin:0}
+.contact-main-v175 .contact-flow-head .kicker{color:var(--orange)}
+.contact-main-v175 .contact-flow-head h1{color:var(--navy);font-size:clamp(2rem,4vw,3rem);line-height:1.04;letter-spacing:-.04em;margin:0 0 12px}
+.contact-main-v175 .contact-flow-head>p:last-child{margin:0;color:var(--muted);font-size:1rem;line-height:1.55}
+.contact-main-v175 .contact-flow-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.7fr);gap:18px;align-items:start}
+.contact-main-v175 .form-embed-card,
+.contact-main-v175 .upload-card{background:#fff;color:var(--ink);border:1px solid #dde4e8;border-top:2px solid var(--orange);border-radius:9px;box-shadow:0 8px 24px rgba(16,34,49,.055)}
+.contact-main-v175 .form-embed-card{padding:20px 20px 18px}
+.contact-main-v175 .upload-card{padding:20px;position:sticky;top:18px}
+.contact-main-v175 .step-number{background:var(--orange);color:#fff}
+.contact-main-v175 .step-head h2{color:var(--navy)}
+.contact-main-v175 .option-kicker{color:var(--orange)!important}
+.contact-main-v175 .privacy-note{background:#f7f9fa;border-color:#dfe5e9}
+.contact-main-v175 .privacy-note-icon{background:#fff;color:var(--orange);border:1px solid #f3b08c}
+.contact-main-v175 .forms-embed-shell{background:#fafbfb;border-color:#dfe5e9;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7);overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.contact-main-v175 .forms-embed{background:#fafbfb;touch-action:auto}
+.contact-main-v175 .upload-card>p{color:var(--muted)}
+.contact-main-v175 .upload-note{background:#f7f9fa;border-color:#dfe5e9;color:var(--muted)}
+.contact-main-v175 .upload-note strong{color:var(--navy)}
+.contact-main-v175 .upload-button,
+.contact-main-v175 .email-button{background:var(--orange);border-color:var(--orange);color:#fff}
+.contact-main-v175 .upload-button:hover,
+.contact-main-v175 .email-button:hover{background:var(--orange-dark);border-color:var(--orange-dark);color:#fff}
+.contact-main-v175 .contact-direct{margin:0;background:#fff;border:1px solid #dde4e8;border-radius:9px;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:22px;align-items:center;box-shadow:0 5px 16px rgba(16,34,49,.035)}
+.contact-main-v175 .contact-direct h2{margin:0 0 5px;color:var(--navy);font-size:1.22rem}
+.contact-main-v175 .contact-direct p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.45}
+.contact-main-v175 .contact-direct .option-kicker{margin-bottom:5px!important}
+.contact-main-v175 .contact-direct .email-button{width:100%}
+
+/* Startseite: ein eindeutiger Kontakt-CTA statt E-Mail + Formular doppelt */
+.contact-actions-single{display:flex!important;justify-content:flex-end;align-items:center;min-width:260px}
+.contact-actions-single .contact-main-cta{width:min(100%,320px)}
+
+@media(max-width:940px){
+  .contact-main-v175 .contact-flow-grid{grid-template-columns:1fr}
+  .contact-main-v175 .upload-card{position:static}
+  .contact-main-v175 .contact-direct{grid-template-columns:1fr;gap:12px}
+  .contact-actions-single{justify-content:flex-start;width:100%}
+}
+
+@media(max-width:760px){
+  .contact-intro-band{padding:25px 0 20px}
+  .contact-form-band{padding:14px 0 16px}
+  .contact-direct-band{padding:14px 0 20px}
+  .contact-main-v175 .contact-flow-head h1{font-size:1.72rem;line-height:1.08;margin-bottom:9px}
+  .contact-main-v175 .contact-flow-head>p:last-child{font-size:.88rem;line-height:1.45}
+  .contact-main-v175 .contact-flow-grid{gap:10px}
+  .contact-main-v175 .form-embed-card,
+  .contact-main-v175 .upload-card{border-radius:7px;box-shadow:none;border-top-width:2px}
+  .contact-main-v175 .form-embed-card{padding:13px 10px 12px}
+  .contact-main-v175 .upload-card{padding:15px 14px}
+  .contact-main-v175 .forms-embed-shell{min-height:820px;border-radius:5px}
+  .contact-main-v175 .forms-embed{height:820px;min-height:820px}
+  .contact-main-v175 .embed-fallback{display:none}
+  .contact-main-v175 .contact-direct{padding:14px;gap:10px;box-shadow:none}
+  .contact-main-v175 .contact-direct h2{font-size:1.05rem}
+  .contact-main-v175 .contact-direct p{font-size:.8rem}
+  .contact-main-v175 .contact-direct .email-button{font-size:.82rem;overflow-wrap:anywhere}
+  .contact-actions-single{display:block!important;margin-top:14px;width:100%;min-width:0}
+  .contact-actions-single .contact-main-cta{width:100%}
+}
