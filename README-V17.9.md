@@ -1,0 +1,1 @@
+V17.9: rechte Kontaktspalte als zusammenhängender heller Bereich. Upload oben, deutlich gekennzeichneter alternativer E-Mail-Weg, E-Mail-Karte am unteren Formularrand auf Desktop. Mobil kompakt untereinander. Keine Änderungen an Grafiken, Formular-URL oder anderen Seiteninhalten.

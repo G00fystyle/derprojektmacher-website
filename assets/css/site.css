@@ -718,3 +718,23 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-of
 .contact-main-v175 .contact-side-column .contact-direct p{font-size:.9rem}
 @media(max-width:940px){.contact-main-v175 .contact-side-column{position:static}}
 @media(max-width:760px){.contact-main-v175 .contact-side-column{gap:14px}.contact-main-v175 .contact-side-column .contact-direct{padding:16px 14px;box-shadow:none}}
+
+/* V17.9: vollständige rechte Spalte mit klarem alternativem Kontaktweg */
+.contact-main-v175 .contact-flow-grid{align-items:stretch}
+.contact-main-v175 .contact-side-column{position:static;display:flex;flex-direction:column;gap:0;align-self:stretch;padding:0;background:var(--soft);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.contact-main-v175 .contact-side-column .upload-card{border:0;border-top:2px solid var(--orange);border-radius:9px 9px 0 0;box-shadow:none;background:#fff}
+.contact-alternative-divider{flex:1;min-height:72px;display:flex;align-items:center;gap:12px;padding:24px 20px;color:var(--muted);font-size:.78rem;text-align:center}
+.contact-alternative-divider::before,.contact-alternative-divider::after{content:"";height:1px;background:var(--line);flex:1}
+.contact-alternative-divider span{max-width:145px}
+.contact-main-v175 .contact-side-column .contact-direct{border:0;border-top:1px solid var(--line);border-radius:0 0 9px 9px;box-shadow:none;padding:24px 20px;background:#fff}
+@media(max-width:940px){.contact-alternative-divider{flex:0;min-height:60px;padding:18px 20px}.contact-main-v175 .contact-side-column{align-self:start}}
+@media(max-width:760px){.contact-main-v175 .contact-side-column{gap:0}.contact-main-v175 .contact-side-column .contact-direct{padding:20px 14px}.contact-alternative-divider{padding:18px 14px}}
+
+.contact-request-guide{flex:1;padding:24px 20px;border-top:1px solid var(--line)}
+.contact-request-guide h3{margin:0 0 18px;color:var(--navy);font-size:1rem}
+.contact-request-guide ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.contact-request-guide li{padding-left:14px;border-left:2px solid var(--orange)}
+.contact-request-guide strong{display:block;font-size:.88rem;color:var(--navy)}
+.contact-request-guide span{display:block;font-size:.84rem;line-height:1.5;color:var(--muted);margin-top:4px}
+.contact-alternative-divider{flex:0;min-height:56px;padding:16px 20px}
+@media(max-width:760px){.contact-request-guide{padding:20px 14px}.contact-request-guide ul{gap:14px}}
