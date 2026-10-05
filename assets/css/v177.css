@@ -1,0 +1,52 @@
+/* V17.7: gemeinsame Content-Flächen auf allen Seiten */
+:root{--surface-max:1240px;--surface-inset:clamp(20px,5vw,80px)}
+.usp,.qualities,.sub-hero,footer,
+.contact-main-v175 .contact-intro-band{
+  width:min(calc(100% - 40px),var(--surface-max));
+  margin-inline:auto;
+  border-radius:12px;
+  background:var(--navy);
+}
+.usp>.wrap,.qualities>.wrap,.sub-hero>.wrap,footer>.wrap,
+.contact-main-v175 .contact-intro-band>.wrap{
+  width:auto;
+  max-width:var(--max);
+  margin-inline:var(--surface-inset);
+}
+.sub-hero,.contact-main-v175 .contact-intro-band{margin-top:28px}
+.contact-main-v175 .contact-intro-band{padding:34px 0}
+.contact-main-v175 .contact-flow-wrap{max-width:var(--max)}
+footer{margin-bottom:20px}
+.contact-main-v175 .contact-direct-band{
+  background:#fff;color:var(--ink);padding:0 0 34px;
+}
+.contact-main-v175 .contact-direct-band .contact-direct{
+  background:var(--soft);border:1px solid var(--line);border-radius:10px;
+  padding:24px;box-shadow:none;
+}
+.contact-main-v175 .contact-direct-band .contact-direct h2{color:var(--navy)}
+.contact-main-v175 .contact-direct-band .contact-direct p{color:var(--muted)}
+.contact-main-v175 .contact-direct-band .contact-direct .email-button{overflow-wrap:anywhere}
+.contact-main-v175 .contact-direct-band .contact-direct{background:#fff}
+.contact-main-v175 .contact-direct-band .contact-direct .option-kicker{color:var(--orange)!important}
+@media(min-width:1280px){
+  .usp>.wrap,.qualities>.wrap,.sub-hero>.wrap,footer>.wrap,
+  .contact-main-v175 .contact-intro-band>.wrap{margin-inline:auto;width:var(--max)}
+}
+@media(max-width:760px){
+  :root{--surface-inset:18px}
+  .usp,.qualities,.sub-hero,footer,
+  .contact-main-v175 .contact-intro-band{width:calc(100% - 28px);border-radius:9px}
+  .sub-hero,.contact-main-v175 .contact-intro-band{margin-top:16px}
+  .contact-main-v175 .contact-intro-band{padding:24px 0}
+  .contact-main-v175 .contact-flow-head h1{font-size:clamp(1.5rem,7vw,1.72rem)}
+  .contact-main-v175 .contact-direct-band{padding:0 0 22px}
+  .contact-main-v175 .contact-direct-band .contact-direct{padding:18px;gap:14px;border-radius:9px}
+  .contact-main-v175 .contact-direct-band .contact-direct p{font-size:.9rem}
+  .contact-main-v175 .contact-direct-band .contact-direct .email-button{font-size:.9rem;min-height:48px}
+  .contact-main-v175 .contact-flow-grid{gap:16px}
+  .contact-main-v175 .upload-card>p{font-size:.9rem}
+  footer{margin-bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
