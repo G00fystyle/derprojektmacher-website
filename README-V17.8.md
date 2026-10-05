@@ -1,0 +1,1 @@
+V17.8: E-Mail-Karte unter die Upload-Karte in der rechten Spalte verschoben. Separater unterer E-Mail-Bereich entfernt. Mobil Reihenfolge Formular, Upload, direkte E-Mail. Sonstige Inhalte und Grafiken unverändert gegenüber V17.7.1.
